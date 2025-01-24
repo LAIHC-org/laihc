@@ -39,7 +39,7 @@ This directory contains the full source code for the LAIHC website. The key file
    npm run serve
    ```
 
-4. Open your browser and visit `http://localhost:8080` to view the website.
+4. Open your browser and visit the URL provided by the Vite development server (e.g., `http://localhost:5174/`) to view the website. The specific URL will be displayed in the terminal after running `npm run dev`. Use the `--host` option if you need to expose the server on your network.
 
 ## Project Setup
 
