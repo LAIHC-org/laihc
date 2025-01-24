@@ -5,12 +5,15 @@ This repository contains the code for the Latin American HCI Community (LAIHC) w
 ## Structure
 
 ### Root Directory
+
 - `README.md`: This file, which provides an overview of the repository.
 - `LICENSE`: The license under which the code is distributed.
 - `laihc-website/`: The directory containing the Vue.js application.
 
 ### `laihc-website/` Directory
+
 This directory contains the full source code for the LAIHC website. The key files and folders include:
+
 - `src/`: Source code for the application, including components, views, and assets.
 - `public/`: Static files and the base `index.html`.
 - `package.json`: Lists dependencies and scripts for building and running the application.
@@ -19,16 +22,19 @@ This directory contains the full source code for the LAIHC website. The key file
 ## How to Run the Application
 
 1. Navigate to the application directory:
+
    ```bash
    cd laihc-website
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Run the development server:
+
    ```bash
    npm run serve
    ```
@@ -48,26 +54,31 @@ This template should help get you started developing with Vue 3 in Vite.
 See [Vite Configuration Reference](https://vite.dev/config/).
 
 ### Install dependencies
+
 ```bash
 npm install
 ```
 
 ### Compile and Hot-Reload for Development
+
 ```bash
 npm run dev
 ```
 
 ### Compile and Minify for Production
+
 ```bash
 npm run build
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
+
 ```bash
 npm run test:unit
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
+
 ```bash
 npm run lint
 ```
@@ -77,11 +88,13 @@ npm run lint
 To build the application for production:
 
 1. Navigate to the application directory:
+
    ```bash
    cd laihc-website
    ```
 
 2. Build the application:
+
    ```bash
    npm run build
    ```
