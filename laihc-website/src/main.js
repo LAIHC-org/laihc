@@ -1,5 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; // Importación de Bootstrap CSS
-import 'bootstrap'; // Importa el JavaScript de Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css' // Importación de Bootstrap CSS
+import 'bootstrap' // Importa el JavaScript de Bootstrap
 import './assets/main.css'
 
 import { createApp } from 'vue'
