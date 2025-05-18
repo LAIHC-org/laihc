@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redireccionando...</title>
+    <meta http-equiv="refresh" content="0; url=/laihc/" />
+  </head>
+  <body>
+    <script>
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+      location.replace('/laihc/');
+    </script>
+  </body>
+</html>
