@@ -7,8 +7,11 @@
   </head>
   <body>
     <script>
-        sessionStorage.redirect = location.pathname + location.search + location.hash;
-        location.replace('/laihc/');
+        const redirectPath = location.pathname + location.search + location.hash;
+        sessionStorage.setItem('redirect', redirectPath);
+
+        // 👇 Incluye la ruta original como hash para evitar que se pierda
+        location.replace('/laihc/#' + redirectPath);
     </script>
   </body>
 </html>
