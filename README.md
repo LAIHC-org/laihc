@@ -1,106 +1,113 @@
-# LAIHC Website
+# 🌎 LAIHC Website
 
-This repository contains the code for the Latin American HCI Community (LAIHC) website. The main application is built using Vue.js and is located in the `laihc-website` directory.
+Este repositorio contiene el código fuente del sitio web oficial de la **Comunidad Latinoamericana de Interacción Humano-Computadora (LAIHC)**. La aplicación está desarrollada en [Vue.js](https://vuejs.org/) utilizando [Vite](https://vite.dev/) como herramienta de construcción moderna para aplicaciones frontend.
 
-## Structure
+El objetivo del sitio es ofrecer una presencia digital institucional moderna, accesible y mantenible para la comunidad académica de IHC en América Latina.
 
-### Root Directory
+---
 
-- `README.md`: This file, which provides an overview of the repository.
-- `LICENSE`: The license under which the code is distributed.
-- `laihc-website/`: The directory containing the Vue.js application.
+## 📁 Estructura del Repositorio
 
-### `laihc-website/` Directory
+### Raíz del Repositorio
 
-This directory contains the full source code for the LAIHC website. The key files and folders include:
+* `README.md`: Esta documentación.
+* `LICENSE`: Licencia del proyecto.
+* `laihc-website/`: Contiene el código fuente de la aplicación web.
 
-- `src/`: Source code for the application, including components, views, and assets.
-- `public/`: Static files and the base `index.html`.
-- `package.json`: Lists dependencies and scripts for building and running the application.
-- `node_modules/`: Automatically generated folder for dependencies (not included in the repository).
+### Directorio `laihc-website/`
 
-## How to Run the Application
+Contiene la aplicación Vue 3 con la siguiente estructura:
 
-1. Navigate to the application directory:
+* `src/`: Componentes, vistas, rutas y recursos de la aplicación.
+* `public/`: Archivos estáticos y `index.html` base.
+* `package.json`: Dependencias y scripts del proyecto.
+* `vite.config.js`: Configuración de Vite.
+* `node_modules/`: Dependencias (excluidas del repositorio).
 
-   ```bash
-   cd laihc-website
-   ```
+---
 
-2. Install dependencies:
+## 🧪 Requisitos y Entorno de Desarrollo
 
-   ```bash
-   npm install
-   ```
+### Requisitos previos
 
-3. Run the development server:
+* [Node.js](https://nodejs.org/) 18 o superior
+* [npm](https://www.npmjs.com/)
 
-   ```bash
-   npm run serve
-   ```
-
-4. Open your browser and visit the URL provided by the Vite development server (e.g., `http://localhost:5174/`) to view the website. The specific URL will be displayed in the terminal after running `npm run dev`. Use the `--host` option if you need to expose the server on your network.
-
-## Project Setup
-
-This template should help get you started developing with Vue 3 in Vite.
-
-### Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-### Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-### Install dependencies
+### Instalación de dependencias
 
 ```bash
+cd laihc-website
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Ejecutar en modo desarrollo
 
 ```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+Luego abre el navegador en la URL que indique la consola (por defecto `http://localhost:5173`).
 
-```bash
-npm run build
-```
+> Usa `npm run dev -- --host` si deseas exponer el servidor en tu red local.
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+---
 
-```bash
-npm run test:unit
-```
+## 🧰 Scripts disponibles
 
-### Lint with [ESLint](https://eslint.org/)
+| Comando             | Descripción                                      |
+| ------------------- | ------------------------------------------------ |
+| `npm run dev`       | Compila y recarga en caliente para desarrollo    |
+| `npm run build`     | Compila y minifica para producción               |
+| `npm run preview`   | Previsualiza la versión de producción localmente |
+| `npm run lint`      | Aplica correcciones automáticas con ESLint       |
+| `npm run format`    | Formatea archivos con Prettier                   |
+| `npm run test:unit` | Ejecuta pruebas unitarias con Vitest             |
 
-```bash
-npm run lint
-```
+---
 
-## Deployment
+## 🚀 Despliegue en GitHub Pages
 
-To build the application for production:
+El sitio se publica automáticamente mediante la rama `gh-pages`.
 
-1. Navigate to the application directory:
+### 📦 Compilar y desplegar
+
+1. Asegúrate de estar en el directorio raíz del proyecto:
 
    ```bash
    cd laihc-website
    ```
 
-2. Build the application:
+2. Ejecuta el siguiente comando:
 
    ```bash
-   npm run build
+   npm run deploy
    ```
 
-3. The production-ready files will be in the `dist/` directory inside `laihc-website`.
+   Esto:
 
-## License
+   * Compila el sitio (`npm run build`)
+   * Publica el contenido de `dist/` en la rama `gh-pages` usando [gh-pages](https://www.npmjs.com/package/gh-pages)
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+3. Una vez desplegado, el sitio estará disponible en:
+
+   📍 [https://laihc-org.github.io/laihc/](https://laihc-org.github.io/laihc/)
+
+> Asegúrate de que en la configuración del repositorio, en **Settings > Pages**, esté seleccionada la rama `gh-pages` como fuente del sitio.
+
+---
+
+## 🧑‍💼 Recomendaciones para Desarrollo
+
+Se recomienda utilizar [Visual Studio Code](https://code.visualstudio.com/) con la extensión [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (deshabilitando Vetur para evitar conflictos).
+
+---
+
+## 🪪 Licencia
+
+Este proyecto está licenciado bajo los términos de la licencia MIT. Consulta el archivo [`LICENSE`](./LICENSE) para más detalles.
+
+---
+
+## 🤝 Contribuciones
+
+Las contribuciones académicas, técnicas o de contenido son bienvenidas. Por favor abre un [issue](https://github.com/LAIHC-org/laihc/issues) o envía un *pull request* siguiendo las buenas prácticas de desarrollo colaborativo.
