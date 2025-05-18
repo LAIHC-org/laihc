@@ -1,0 +1,1 @@
+import{_ as t,c as n,a as o,o as r}from"./index-9ug1TZQM.js";const s={};function a(c,e){return r(),n("div",null,e[0]||(e[0]=[o("h1",null,"About LAIHC",-1),o("p",null,"About...",-1)]))}const u=t(s,[["render",a]]);export{u as default};
