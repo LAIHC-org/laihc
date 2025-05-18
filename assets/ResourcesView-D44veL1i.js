@@ -1,1 +1,0 @@
-import{_ as o,c as r,a as s,o as c}from"./index-BjYC46RQ.js";const n={};function t(a,e){return c(),r("div",null,e[0]||(e[0]=[s("h1",null,"Resources LAIHC",-1),s("p",null,"Resources...",-1)]))}const u=o(n,[["render",t]]);export{u as default};

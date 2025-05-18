@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Redireccionando...</title>
-    <meta http-equiv="refresh" content="0; url=/laihc/" />
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAIHC Website</title>
   </head>
   <body>
-    <script>
-        const redirectPath = location.pathname + location.search + location.hash;
-        sessionStorage.setItem('redirect', redirectPath);
-
-        // 👇 Incluye la ruta original como hash para evitar que se pierda
-        location.replace(redirectPath);
-    </script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
