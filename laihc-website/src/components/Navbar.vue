@@ -9,7 +9,7 @@ const { t } = useI18n();
 <template>
     <nav class="container navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="@/assets/laihc.svg" alt="Logo LAIHC" style="height: 48px" /></a>
+            <a class="navbar-brand" href="#"><img src="@/assets/laihc-black.svg" alt="Logo LAIHC" style="height: 32px" /></a>
             <button
                 class="navbar-toggler"
                 type="button"
