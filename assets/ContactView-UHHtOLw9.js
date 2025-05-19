@@ -1,1 +1,0 @@
-import{_ as n,c as o,a as e,o as a}from"./index-BnJ1mrHD.js";const c={};function r(s,t){return a(),o("div",null,t[0]||(t[0]=[e("h1",null,"Contact LAIHC",-1),e("p",null,"Contact...",-1)]))}const _=n(c,[["render",r]]);export{_ as default};
