@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/laihc/', // 👈 necesario para GitHub Pages
+  base: '/', // 👈 necesario para GitHub Pages
   plugins: [
     vue(),
     vueDevTools(),
