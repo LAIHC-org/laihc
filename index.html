@@ -10,18 +10,18 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <script>
+      if (sessionStorage.redirect) {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        const redirectUrl = new URL(redirect);
+        const appBaseUrl = new URL('/', location.href);
+        if (redirectUrl.origin === appBaseUrl.origin) {
+          const path = redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
+          history.replaceState(null, null, path);
+        }
+      }
+    </script>    
   </body>
 </html>
-
-<script>
-  if (sessionStorage.redirect) {
-    const redirect = sessionStorage.redirect;
-    delete sessionStorage.redirect;
-    const redirectUrl = new URL(redirect);
-    const appBaseUrl = new URL('/', location.href);
-    if (redirectUrl.origin === appBaseUrl.origin) {
-      const path = redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
-      history.replaceState(null, null, path);
-    }
-  }
-</script>
