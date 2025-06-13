@@ -9,7 +9,9 @@ const { t } = useI18n();
 <template>
     <nav class="container navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="@/assets/laihc-black.svg" alt="Logo LAIHC" style="height: 32px" /></a>
+            <Router-link class="navbar-brand" to="/">
+				<img src="@/assets/laihc-black.svg" alt="LAIHC" style="height: 32px; position: relative; top: -5px;" />
+			</Router-link>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -29,20 +31,22 @@ const { t } = useI18n();
                         }}</Router-link>
                     </li>
                     <li class="nav-item">
-                        <Router-link class="nav-link" to="/about">{{
-                            t("navbar.about")
-                        }}</Router-link>
-                    </li>
-                    <li class="nav-item">
                         <Router-link class="nav-link" to="/events">{{
                             t("navbar.events")
                         }}</Router-link>
                     </li>
                     <li class="nav-item">
+                        <Router-link class="nav-link" to="/about">{{
+                            t("navbar.about")
+                        }}</Router-link>
+                    </li>
+					<!--
+					<li class="nav-item">
                         <Router-link class="nav-link" to="/resources">{{
                             t("navbar.resources")
                         }}</Router-link>
                     </li>
+					-->
                     <li class="nav-item">
                         <Router-link class="nav-link" to="/contact">{{
                             t("navbar.contact")

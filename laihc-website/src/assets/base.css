@@ -38,3 +38,36 @@ main {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
+  padding-bottom: 2px;
+}
+
+/* Línea decorativa con glow */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  transform: translateX(-50%) scaleX(0);
+  height: 1px;
+  width: 95%; /* Más corta que el texto */
+  background: #ffa500;
+  border-radius: 2px;
+  box-shadow:
+    0 0 12px rgba(255, 165, 0, 0.7),
+    0 0 13px rgba(255, 140, 0, 0.5),
+    0 0 21px rgba(255, 120, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+/* En hover y activo */
+.nav-link:hover::after,
+.router-link-exact-active.nav-link::after {
+  opacity: 1;
+  transform: translateX(-50%) scaleX(1);
+}

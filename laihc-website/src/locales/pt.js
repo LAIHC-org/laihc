@@ -1,8 +1,8 @@
 export default {
 	navbar: {
 		home: 'Início',
-		about: 'Sobre',
-		events: 'Eventos',
+		about: 'Sobre LAIHC',
+		events: 'Histórico CLIHC',
 		resources: 'Recursos',
 		contact: 'Contato',
 	},
