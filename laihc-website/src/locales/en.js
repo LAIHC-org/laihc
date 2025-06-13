@@ -1,11 +1,12 @@
 export default {
 	navbar: {
 		home: 'Home',
-		about: 'About LAIHC',
-		events: 'CLIHC History',
+		about: 'About <strong>LAIHC</strong>',
+		events: '<strong>CLIHC</strong> History',
 		resources: 'Resources',
 		contact: 'Contact',
 	},
 	welcome: 'Welcome to <strong>LAIHC</strong>',
-	about: 'Learn more about <a href="/about">our mission</a>.',
+	about: 'Driving human–computer interaction in Latin America.',
+	cta: 'Learn about CLIHC',
 };

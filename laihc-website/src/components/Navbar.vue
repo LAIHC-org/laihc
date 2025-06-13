@@ -49,7 +49,7 @@ const menuItems = ['home','events','about','contact']
               class="nav-link"
               :to="{ name: `${key}-${currentLocale}` }"
             >
-              {{ t(`navbar.${key}`) }}
+              <span v-html="t(`navbar.${key}`)"></span>
             </RouterLink>
           </li>
         </ul>
