@@ -1,63 +1,62 @@
 <script setup>
-import { RouterLink } from "vue-router";
-import LanguageSelector from "./LanguageSelector.vue";
-import { useI18n } from "vue-i18n";
+import { computed } from 'vue'
+import { RouterLink } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import LanguageSelector from './LanguageSelector.vue'
 
-const { t } = useI18n();
+const { t, locale } = useI18n()
+const currentLocale = computed(() => locale.value)
+
+// Claves deben coincidir con las de localizedPaths.js
+const menuItems = ['home','events','about','contact']
 </script>
 
 <template>
-    <nav class="container navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <Router-link class="navbar-brand" to="/">
-				<img src="@/assets/laihc-black.svg" alt="LAIHC" style="height: 32px; position: relative; top: -5px;" />
-			</Router-link>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+  <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Logo → home del idioma actual -->
+      <RouterLink
+        class="navbar-brand"
+        :to="{ name: `home-${currentLocale}` }"
+      >
+        <img
+          src="@/assets/laihc-black.svg"
+          alt="LAIHC"
+          style="height:32px; top:-5px; position:relative;"
+        />
+      </RouterLink>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li
+            v-for="key in menuItems"
+            :key="key"
+            class="nav-item"
+          >
+            <RouterLink
+              class="nav-link"
+              :to="{ name: `${key}-${currentLocale}` }"
             >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <Router-link class="nav-link" to="/">{{
-                            t("navbar.home")
-                        }}</Router-link>
-                    </li>
-                    <li class="nav-item">
-                        <Router-link class="nav-link" to="/events">{{
-                            t("navbar.events")
-                        }}</Router-link>
-                    </li>
-                    <li class="nav-item">
-                        <Router-link class="nav-link" to="/about">{{
-                            t("navbar.about")
-                        }}</Router-link>
-                    </li>
-					<!--
-					<li class="nav-item">
-                        <Router-link class="nav-link" to="/resources">{{
-                            t("navbar.resources")
-                        }}</Router-link>
-                    </li>
-					-->
-                    <li class="nav-item">
-                        <Router-link class="nav-link" to="/contact">{{
-                            t("navbar.contact")
-                        }}</Router-link>
-                    </li>
-                </ul>
-                <div class="ms-auto">
-                    <!-- Subcomponente del selector de idioma -->
-                    <LanguageSelector />
-                </div>
-            </div>
+              {{ t(`navbar.${key}`) }}
+            </RouterLink>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <LanguageSelector />
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </template>
