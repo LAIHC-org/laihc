@@ -1,0 +1,1 @@
+import{_ as t,c as s,a as n,o}from"./index-CAoUIs3g.js";const r={};function a(c,e){return o(),s("div",null,e[0]||(e[0]=[n("h1",null,"Events LAIHC",-1),n("p",null,"Events...",-1)]))}const _=t(r,[["render",a]]);export{_ as default};
