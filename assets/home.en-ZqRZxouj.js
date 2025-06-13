@@ -1,0 +1,87 @@
+const n=`<!-- About LAIHC -->
+<section class="about mb-5">
+  <h2 class="fw-bold text-center">What is the Latin American HCI Community (LAIHC)?</h2>
+  <p>
+    The Latin American HCI Community (LAIHC) is an independent regional network of researchers,
+    practitioners, and students committed to advancing Human–Computer Interaction (HCI) throughout
+    Latin America. Its core mission is to foster collaboration, knowledge sharing, and regional
+    development in HCI through community-driven initiatives.
+  </p>
+  <p>
+    LAIHC organizes the Latin American Conference on Human–Computer Interaction (CLIHC), a biennial
+    event showcasing cutting-edge research and practice in the region. The community also maintains
+    essential resources—such as the official CLIHC website—and provides support and guidance to
+    conference organizers.
+  </p>
+  <p>
+    Led by a volunteer committee, LAIHC ensures continuity of the conference series, promotes
+    inclusive participation, and advances HCI growth in Latin America through open collaboration,
+    shared goals, and a strong regional identity.
+  </p>
+  <div class="text-center">
+    <button class="btn btn-primary btn-lg">Learn more about us</button>
+  </div>
+</section>
+
+<!-- Featured Conferences -->
+<section class="conferences mb-5">
+  <h2 class="text-center fw-bold mb-4">Featured Conferences</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">CLIHC 2023</h3>
+          <p class="card-text">
+            The latest edition of our biennial conference.
+          </p>
+          <button class="btn btn-outline-primary">View details</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">CLIHC 2021</h3>
+          <p class="card-text">
+            Explore the sessions and resources from our online conference.
+          </p>
+          <button class="btn btn-outline-primary">View details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <button class="btn btn-primary btn-lg">See all conferences</button>
+  </div>
+</section>
+
+<!-- News & Resources -->
+<section class="news-resources">
+  <h2 class="text-center fw-bold mb-4">News & Resources</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">CLIHC 2025 Call for Papers</h3>
+          <p class="card-text">
+            Participate in the next edition of our conference!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Recent Publications</h3>
+          <p class="card-text">
+            Discover the latest articles and resources from our community.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <button class="btn btn-primary btn-lg">Explore resources</button>
+  </div>
+</section>
+`;export{n as default};

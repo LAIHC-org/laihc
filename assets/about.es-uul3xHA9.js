@@ -1,0 +1,6 @@
+const n=`<section class="about container py-4">
+  <h1>Acerca de <strong>LAIHC</strong></h1>
+  <p>
+    LAIHC es una comunidad multidisciplinaria que impulsa…
+  </p>
+</section>`;export{n as default};

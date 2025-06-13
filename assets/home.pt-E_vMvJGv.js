@@ -1,0 +1,86 @@
+const n=`<!-- Sobre a LAIHC -->
+<section class="about mb-5">
+  <h2 class="fw-bold text-center">O que é a Comunidade Latino-Americana de IHC (LAIHC)?</h2>
+  <p>
+    A Comunidade Latino-Americana de IHC (LAIHC) é uma rede regional independente de pesquisadores,
+    profissionais e estudantes dedicados a promover a Interação Humano–Computador (IHC) em toda a
+    América Latina. Sua missão principal é fomentar a colaboração, o compartilhamento de conhecimento
+    e o desenvolvimento regional em IHC por meio de iniciativas da comunidade.
+  </p>
+  <p>
+    A LAIHC organiza a Conferência Latino-Americana de Interação Humano–Computador (CLIHC), um evento
+    bienal que apresenta pesquisas e práticas de ponta na região. A comunidade também mantém recursos
+    essenciais, como o site oficial do CLIHC, e oferece suporte e orientação aos organizadores da conferência.
+  </p>
+  <p>
+    Liderada por um comitê de voluntários, a LAIHC garante a continuidade da série de conferências,
+    promove a participação inclusiva e impulsiona o crescimento da IHC na América Latina por meio da
+    colaboração aberta, metas compartilhadas e uma forte identidade regional.
+  </p>
+  <div class="text-center">
+    <button class="btn btn-primary btn-lg">Saiba mais sobre nós</button>
+  </div>
+</section>
+
+<!-- Conferências em Destaque -->
+<section class="conferences mb-5">
+  <h2 class="text-center fw-bold mb-4">Conferências em Destaque</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">CLIHC 2023</h3>
+          <p class="card-text">
+            A edição mais recente de nossa conferência bienal.
+          </p>
+          <button class="btn btn-outline-primary">Ver detalhes</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">CLIHC 2021</h3>
+          <p class="card-text">
+            Explore as sessões e recursos de nossa conferência online.
+          </p>
+          <button class="btn btn-outline-primary">Ver detalhes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <button class="btn btn-primary btn-lg">Ver todas as conferências</button>
+  </div>
+</section>
+
+<!-- Novidades e Recursos -->
+<section class="news-resources">
+  <h2 class="text-center fw-bold mb-4">Novidades e Recursos</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Chamada de Artigos CLIHC 2025</h3>
+          <p class="card-text">
+            Participe da próxima edição de nossa conferência!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Publicações Recentes</h3>
+          <p class="card-text">
+            Descubra os artigos e recursos mais recentes da nossa comunidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <button class="btn btn-primary btn-lg">Explorar recursos</button>
+  </div>
+</section>
+`;export{n as default};
