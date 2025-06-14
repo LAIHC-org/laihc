@@ -8,5 +8,5 @@ export default {
 	},
 	welcome: 'Bienvenido a <strong>LAIHC</strong>',
 	about: 'Impulsando la interacción humano-computadora en América Latina.',
-	cta: 'Conoce CLIHC',
+	cta: 'Descubre <strong>CLIHC</strong>',
 };
