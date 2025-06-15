@@ -1,4 +1,14 @@
 export default {
+	footer: {
+		tagline: "Impulsionando a interação humano-computador na América Latina.",
+		navigation: "Navegação",
+		followUs: "Siga-nos",
+		fbClihc: "Facebook do CLIHC",
+		fbLaihc: "Facebook da LAIHC",
+		xClihc: "CLIHC no X (Twitter)",
+		xLaihc: "LAIHC no X (Twitter)",
+		rights: "Todos os direitos reservados"
+	},
 	navbar: {
 		home: 'Início',
 		about: 'Sobre <strong>LAIHC</strong>',
