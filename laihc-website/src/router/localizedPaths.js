@@ -4,6 +4,6 @@ export const supportedLocales = ['es','en','pt']
 export const localizedPaths = {
   home:      { es: '',         en: '',        pt: ''        },
   about:     { es: 'acerca',   en: 'about',   pt: 'sobre'   },
-  events:    { es: 'eventos',  en: 'events',  pt: 'historico' },
+  events:    { es: 'historia',  en: 'history',  pt: 'historia' },
   contact:   { es: 'contacto', en: 'contact',  pt: 'contato' }
 }

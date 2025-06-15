@@ -130,9 +130,6 @@ footer a:hover::after {
   transform: scaleX(1);
 }
 
-.timeline-block {
-  /* separador entre bloques */
-}
 .card-wrapper {
   position: sticky;
   top: 100px; /* ajusta según tu header */
