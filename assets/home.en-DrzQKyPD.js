@@ -19,7 +19,7 @@ const n=`<!-- About LAIHC -->
     shared goals, and a strong regional identity.
   </p>
   <div class="text-center">
-    <button class="btn btn-primary btn-lg">Learn more about us</button>
+    <a class="btn btn-primary btn-lg" href="/en/about">Learn more about us</a>
   </div>
 </section>
 
@@ -34,7 +34,7 @@ const n=`<!-- About LAIHC -->
           <p class="card-text">
             The latest edition of our biennial conference.
           </p>
-          <button class="btn btn-outline-primary">View details</button>
+          <a class="btn btn-outline-primary" href="/en/history#clihc2023">View details of CLIHC 2023</a>
         </div>
       </div>
     </div>
@@ -45,17 +45,15 @@ const n=`<!-- About LAIHC -->
           <p class="card-text">
             Explore the sessions and resources from our online conference.
           </p>
-          <button class="btn btn-outline-primary">View details</button>
+          <a class="btn btn-outline-primary" href="/en/history#clihc2021">View details of CLIHC 2021</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="text-center mt-4">
-    <button class="btn btn-primary btn-lg">See all conferences</button>
-  </div>
 </section>
 
 <!-- News & Resources -->
+ <!--
 <section class="news-resources">
   <h2 class="text-center fw-bold mb-4">News & Resources</h2>
   <div class="row g-4">
@@ -83,5 +81,6 @@ const n=`<!-- About LAIHC -->
   <div class="text-center mt-4">
     <button class="btn btn-primary btn-lg">Explore resources</button>
   </div>
+  -->
 </section>
 `;export{n as default};

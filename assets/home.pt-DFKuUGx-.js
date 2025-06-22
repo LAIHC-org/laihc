@@ -1,4 +1,4 @@
-const n=`<!-- Sobre a LAIHC -->
+const a=`<!-- Sobre a LAIHC -->
 <section class="about mb-5">
   <h2 class="fw-bold text-center">O que é a Comunidade Latino-Americana de IHC (LAIHC)?</h2>
   <p>
@@ -18,7 +18,7 @@ const n=`<!-- Sobre a LAIHC -->
     colaboração aberta, metas compartilhadas e uma forte identidade regional.
   </p>
   <div class="text-center">
-    <button class="btn btn-primary btn-lg">Saiba mais sobre nós</button>
+    <a class="btn btn-primary btn-lg" href="/pt/sobre">Saiba mais sobre nós</a>
   </div>
 </section>
 
@@ -33,7 +33,7 @@ const n=`<!-- Sobre a LAIHC -->
           <p class="card-text">
             A edição mais recente de nossa conferência bienal.
           </p>
-          <button class="btn btn-outline-primary">Ver detalhes</button>
+          <a class="btn btn-outline-primary" href="/pt/historia#clihc2023">Ver detalhes do CLIHC 2023</a>
         </div>
       </div>
     </div>
@@ -44,17 +44,15 @@ const n=`<!-- Sobre a LAIHC -->
           <p class="card-text">
             Explore as sessões e recursos de nossa conferência online.
           </p>
-          <button class="btn btn-outline-primary">Ver detalhes</button>
+          <a class="btn btn-outline-primary" href="/pt/historia#clihc2021">Ver detalhes do CLIHC 2021</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="text-center mt-4">
-    <button class="btn btn-primary btn-lg">Ver todas as conferências</button>
-  </div>
 </section>
 
 <!-- Novidades e Recursos -->
+ <!--
 <section class="news-resources">
   <h2 class="text-center fw-bold mb-4">Novidades e Recursos</h2>
   <div class="row g-4">
@@ -82,5 +80,6 @@ const n=`<!-- Sobre a LAIHC -->
   <div class="text-center mt-4">
     <button class="btn btn-primary btn-lg">Explorar recursos</button>
   </div>
+  -->
 </section>
-`;export{n as default};
+`;export{a as default};

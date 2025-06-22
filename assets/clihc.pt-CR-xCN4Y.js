@@ -1,5 +1,5 @@
-const a=`<section class="clihc container py-4">
-  <h1>História do <strong>CLIHC</strong></h1>
+const a=`<section class="clihc container py-5">
+  <h1 class="fw-bold mb-4">História do <strong>CLIHC</strong></h1>
 
   <p class="lead text-muted mb-5">
     Desde sua primeira edição em 2003 no Rio de Janeiro, o Congresso Latino-Americano de Interação
@@ -28,7 +28,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2023</h3>
+        <h3 class="year" id="clihc2023">2023</h3>
         <p>
           De <strong>30 de outubro a 1º de novembro de 2023</strong>, a cidade de <strong>Puebla, México</strong>,
           sediou a
@@ -113,7 +113,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2021</h3>
+        <h3 class="year" id="clihc2021">2021</h3>
         <p>
           De <strong>22 a 23 de novembro de 2021</strong>, foi realizada a décima edição do Congresso Latino-Americano
           de Interação Humano-Computador (CLIHC), organizada a partir de <strong>Valparaíso, Chile</strong>. Devido ao
@@ -180,7 +180,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2019</h3>
+        <h3 class="year" id="clihc2019">2019</h3>
         <p>
           De <strong>30 de setembro a 4 de outubro de 2019</strong>, foi realizada a <strong>nona edição</strong> do
           CLIHC na <strong>Cidade do Panamá, Panamá</strong>,
@@ -238,7 +238,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2017</h3>
+        <h3 class="year" id="clihc2017">2017</h3>
         <p>
           A oitava edição (VIII CLIHC) foi realizada de <strong>8 a 10 de novembro de 2017</strong> na histórica
           <strong>Antigua Guatemala</strong>.
@@ -293,7 +293,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2015</h3>
+        <h3 class="year" id="clihc2015">2015</h3>
         <p>
           A sétima edição (VII CLIHC) foi realizada de <strong>18 a 21 de novembro de 2015</strong> em <strong>Córdoba,
             Argentina</strong>,
@@ -347,7 +347,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2013</h3>
+        <h3 class="year" id="clihc2013">2013</h3>
         <p>
           A sexta edição (VI CLIHC) foi realizada de <strong>2 a 6 de dezembro de 2013</strong> em
           <strong>Carrillo</strong>,
@@ -395,7 +395,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2011</h3>
+        <h3 class="year" id="clihc2011">2011</h3>
         <p>
           A quinta edição (V CLIHC) foi realizada de <strong>25 a 28 de outubro de 2011</strong> em
           <strong>Porto de Galinhas, Brasil</strong>, em conjunto com o
@@ -444,7 +444,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2009</h3>
+        <h3 class="year" id="clihc2009">2009</h3>
         <p>
           A quarta edição (IV CLIHC), realizada de <strong>9 a 11 de novembro de 2009</strong> em
           <strong>Mérida, Yucatán, México</strong>, ocorreu em conjunto com a sétima edição do
@@ -497,7 +497,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2007</h3>
+        <h3 class="year" id="clihc2007">2007</h3>
         <p>
           A terceira edição (III CLIHC) foi realizada nos dias <strong>10 e 11 de setembro de 2007</strong> no
           <strong>Rio de Janeiro, Brasil</strong>, em conjunto com a
@@ -564,7 +564,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2005</h3>
+        <h3 class="year" id="clihc2005">2005</h3>
         <p>
           A <strong>segunda edição</strong> do Congresso Latino-Americano de Interação Humano‑Computador (CLIHC) foi
           realizada de
@@ -617,7 +617,7 @@ const a=`<section class="clihc container py-4">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year">2003</h3>
+        <h3 class="year" id="clihc2003">2003</h3>
         <p>
           A primeira edição (CLIHC I) foi realizada de <strong>17 a 20 de novembro de 2003</strong> no
           <strong>Rio de Janeiro, Brasil</strong>, organizada pelos capítulos locais da ACM/SIGCHI: BR‑CHI, CHI‑México e
