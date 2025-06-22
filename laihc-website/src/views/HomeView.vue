@@ -6,7 +6,10 @@
 				<h1 class="display-4 fw-bold" v-html="$t('welcome')"></h1>
 				<p class="lead" v-html="$t('about')"></p>
 				<div class="d-flex justify-content-center">
-					<button class="btn btn-primary btn-shadow btn-lg me-2" v-html="$t('cta')"></button>
+					<RouterLink class="btn btn-primary btn-shadow btn-lg me-2"
+						:to="{ name: `events-${locale}`, hash: '' }">
+						<span v-html="t('cta')"></span>
+					</RouterLink>
 				</div>
 			</div>
 		</section>
@@ -21,26 +24,29 @@
 
 <script setup>
 import { ref, watch, onMounted } from 'vue'
+import { RouterLink } from 'vue-router'     // usado en el template
 import { useI18n } from 'vue-i18n'
 
-const { locale } = useI18n()
+/* i18n ---------------------------------------------------------- */
+const { t, locale } = useI18n()             // t() y locale (ref)
+
+/* HTML externo -------------------------------------------------- */
 const htmlContent = ref('')
 
 async function loadHtml() {
-  try {
-    // Vite: importar como texto bruto
-    const module = await import(
-      `../content/home/home.${locale.value}.html?raw`
-    )
-    htmlContent.value = module.default
-  } catch (e) {
-    console.error('Error cargando HTML:', e)
-    htmlContent.value = '<p>Error al cargar contenido.</p>'
-  }
+	try {
+		// Vite: importar el archivo como texto plano
+		const mod = await import(`../content/home/home.${locale.value}.html?raw`)
+		htmlContent.value = mod.default
+	} catch (err) {
+		console.error('Error cargando HTML:', err)
+		htmlContent.value = '<p>Error al cargar contenido.</p>'
+	}
 }
 
-onMounted(loadHtml)
-watch(locale, loadHtml)
+/* ciclo de vida ------------------------------------------------- */
+onMounted(loadHtml)          // 1. primera carga
+watch(locale, loadHtml)      // 2. recargar si cambia el idioma
 </script>
 
 <style scoped>
