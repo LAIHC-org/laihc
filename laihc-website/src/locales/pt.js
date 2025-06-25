@@ -1,6 +1,6 @@
 export default {
 	footer: {
-		tagline: "Impulsionando a interação humano-computador na América Latina.",
+		tagline: "Comunidade Latino-Americana de Interação Humano-Computador",
 		navigation: "Navegação",
 		followUs: "Siga-nos",
 		fbClihc: "Facebook do CLIHC",
@@ -17,6 +17,6 @@ export default {
 		contact: 'Contato',
 	},
 	welcome: 'Bem-vindo à <strong>LAIHC</strong>',
-	about: 'Impulsionando a interação humano-computador na América Latina.',
+	about: 'Comunidade Latino-Americana de Interação Humano-Computador',
 	cta: 'Descubra o <strong>CLIHC</strong>',
 };

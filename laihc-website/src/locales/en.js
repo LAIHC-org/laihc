@@ -1,6 +1,6 @@
 export default {
 	footer: {
-		tagline: "Driving human–computer interaction in Latin America.",
+		tagline: "Latin American Human-Computer Interaction Community",
 		navigation: "Navigation",
 		followUs: "Follow us",
 		fbClihc: "CLIHC Facebook",
@@ -17,6 +17,6 @@ export default {
 		contact: 'Contact',
 	},
 	welcome: 'Welcome to <strong>LAIHC</strong>',
-	about: 'Driving human–computer interaction in Latin America.',
+	about: 'Latin American Human-Computer Interaction Community',
 	cta: 'Discover <strong>CLIHC</strong>',
 };

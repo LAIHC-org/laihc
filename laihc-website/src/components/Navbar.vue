@@ -8,7 +8,7 @@ const { t, locale } = useI18n()
 const currentLocale = computed(() => locale.value)
 
 // Claves deben coincidir con las de localizedPaths.js
-const menuItems = ['home','events','about','contact']
+const menuItems = ['home','about', 'events','contact']
 </script>
 
 <template>

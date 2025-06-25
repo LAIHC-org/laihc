@@ -6,7 +6,7 @@ const { t, locale } = useI18n()
 const currentLocale = computed(() => locale.value)
 
 // Claves deben coincidir con las de localizedPaths.js
-const menuItems = ['home','events','about','contact']
+const menuItems = ['home','about', 'events','contact']
 </script>
 
 <template>
@@ -25,7 +25,7 @@ const menuItems = ['home','events','about','contact']
 			/>
 		</RouterLink>
 	  </h5>
-      <p class="mb-0">Driving human–computer interaction in Latin America.</p>
+      <p class="mb-0" v-html="$t('about')"></p>
     </div>
 
     <div>
