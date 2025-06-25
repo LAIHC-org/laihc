@@ -46,7 +46,7 @@ main {
 .btn.btn-primary {
   background-color: #F4A300 !important;
   border-color: #ca8700;
-  color: white;
+  color: #2E2E2E;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -54,6 +54,15 @@ main {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  text-shadow: none;
+}
+
+.btn.btn-primary:hover {
+  background-color: #ca8700 !important;  /* más oscuro que el base */
+  border-color: #a86f00;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);  /* mejora legibilidad */
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-link {
