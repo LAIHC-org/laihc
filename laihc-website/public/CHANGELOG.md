@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/es/).
 
 - Link to publications related to CLIHC conferences
 
+## [2.0.1] - 2025-06-26
+
+### Removed
+
+- Remove X Links from CLIHC and LAIHC.
+
 ## [2.0.0] - 2025-06-26
 
 ### Changed
