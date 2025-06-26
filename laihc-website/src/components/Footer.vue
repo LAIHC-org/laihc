@@ -56,7 +56,7 @@ const menuItems = ['home','about', 'events','contact']
 				rel="noopener"
 				class="footer-link"
 			>
-				<i class="fab fa-facebook me-2"></i>CLIHIC Facebook
+				<i class="fab fa-facebook me-2"></i>CLIHC Facebook
 			</a>
 			</li>
 			<li>
@@ -69,6 +69,7 @@ const menuItems = ['home','about', 'events','contact']
 				<i class="fab fa-facebook me-2"></i>LAIHC Facebook
 			</a>
 			</li>
+			<!--
 			<li>
 			<a
 				href="https://x.com/clihc2023"
@@ -89,6 +90,7 @@ const menuItems = ['home','about', 'events','contact']
 				<i class="fab fa-x-twitter me-2"></i>LAIHC on X
 			</a>
 			</li>
+			-->
 		</ul>
 	</div>
   </div>
