@@ -20,9 +20,9 @@ const menuItems = ['home','about', 'events','contact']
         :to="{ name: `home-${currentLocale}` }"
       >
         <img
-          src="@/assets/laihc-black.svg"
+          src="@/assets/laihc-azul.svg"
           alt="LAIHC"
-          style="height:32px; top:-5px; position:relative;"
+          style="height:64px; top:-5px; position:relative;"
         />
       </RouterLink>
 

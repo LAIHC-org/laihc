@@ -10,7 +10,7 @@ const menuItems = ['home','about', 'events','contact']
 </script>
 
 <template>
-<footer class="bg-dark border-top text-light py-4 mt-5">
+<footer class="bg-dark border-top text-light py-4 mt-2">
   <div class="container d-flex flex-column flex-md-row justify-content-between gap-4">
     <div>
       <h5 class="fw-bold">
@@ -19,9 +19,9 @@ const menuItems = ['home','about', 'events','contact']
 			:to="{ name: `home-${currentLocale}` }"
 		>
 			<img
-			src="@/assets/laihc-white.svg"
+			src="@/assets/laihc-blanco.svg"
 			alt="LAIHC"
-			style="height:32px; top:-5px; position:relative;"
+			style="height:64px; top:-5px; position:relative;"
 			/>
 		</RouterLink>
 	  </h5>
