@@ -61,7 +61,7 @@ const menuItems = ['home','about', 'events','contact']
 			</li>
 			<li>
 			<a
-				href="https://web.facebook.com/sigchilaihc"
+				href="https://web.facebook.com/laihc.org"
 				target="_blank"
 				rel="noopener"
 				class="footer-link"
