@@ -56,7 +56,7 @@ const menuItems = ['home','about', 'events','contact']
 				rel="noopener"
 				class="footer-link"
 			>
-				<i class="fab fa-facebook me-2"></i>CLIHIC Facebook
+				<i class="fab fa-facebook me-2"></i>CLIHC Facebook
 			</a>
 			</li>
 			<li>
@@ -69,6 +69,7 @@ const menuItems = ['home','about', 'events','contact']
 				<i class="fab fa-facebook me-2"></i>LAIHC Facebook
 			</a>
 			</li>
+			<!--
 			<li>
 			<a
 				href="https://x.com/clihc2023"
@@ -89,12 +90,13 @@ const menuItems = ['home','about', 'events','contact']
 				<i class="fab fa-x-twitter me-2"></i>LAIHC on X
 			</a>
 			</li>
+			-->
 		</ul>
 	</div>
   </div>
   <div class="text-center mt-4 small">
     © 2025 LAIHC — All rights reserved · <a href="https://www.laihc.org">www.laihc.org</a><br>
-	<a href="CHANGELOG.md" target="_blank">v2.0.0</a>
+	<a href="CHANGELOG.md" target="_blank">v2.0.1</a>
   </div>
 </footer>
 
