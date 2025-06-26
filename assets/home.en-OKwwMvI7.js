@@ -24,36 +24,47 @@ const n=`<!-- About LAIHC -->
 </section>
 
 <!-- Featured Conferences -->
-<section class="conferences mb-5">
+<section class="conferences">
   <h2 class="text-center fw-bold mb-4">Featured Conferences</h2>
   <div class="row g-4">
+
+    <!-- CLIHC 2023 -->
     <div class="col-md-6">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm h-100">
+        <img src="/images/clihc2023.png" class="card-img-top" alt="CLIHC 2023">
         <div class="card-body">
           <h3 class="card-title">CLIHC 2023</h3>
           <p class="card-text">
+            <strong>Puebla, México</strong><br>
+            <small>October 30 – November 1, 2023</small><br>
             The latest edition of our biennial conference.
           </p>
-          <a class="btn btn-outline-primary" href="/en/history#clihc2023">View details of CLIHC 2023</a>
+          <a class="btn btn-primary" href="/en/history#clihc2023">View details of CLIHC 2023</a>
         </div>
       </div>
     </div>
+
+    <!-- CLIHC 2021 -->
     <div class="col-md-6">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm h-100">
+        <img src="/images/clihc2021.png" class="card-img-top" alt="CLIHC 2021">
         <div class="card-body">
           <h3 class="card-title">CLIHC 2021</h3>
           <p class="card-text">
-            Explore the sessions and resources from our online conference.
+            <strong>Valparaíso, Chile (Online)</strong><br>
+            <small>November 22–23, 2021</small><br>
+            Explore the sessions and resources from our online edition.
           </p>
-          <a class="btn btn-outline-primary" href="/en/history#clihc2021">View details of CLIHC 2021</a>
+          <a class="btn btn-primary" href="/en/history#clihc2021">View details of CLIHC 2021</a>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- News & Resources -->
- <!--
+<!--
 <section class="news-resources">
   <h2 class="text-center fw-bold mb-4">News & Resources</h2>
   <div class="row g-4">
@@ -82,5 +93,4 @@ const n=`<!-- About LAIHC -->
     <button class="btn btn-primary btn-lg">Explore resources</button>
   </div>
   -->
-</section>
-`;export{n as default};
+</section>`;export{n as default};

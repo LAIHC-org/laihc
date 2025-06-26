@@ -23,36 +23,47 @@ const a=`<!-- Sobre a LAIHC -->
 </section>
 
 <!-- Conferências em Destaque -->
-<section class="conferences mb-5">
+<section class="conferences">
   <h2 class="text-center fw-bold mb-4">Conferências em Destaque</h2>
   <div class="row g-4">
+
+    <!-- CLIHC 2023 -->
     <div class="col-md-6">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm h-100">
+        <img src="/images/clihc2023.png" class="card-img-top" alt="CLIHC 2023">
         <div class="card-body">
           <h3 class="card-title">CLIHC 2023</h3>
           <p class="card-text">
-            A edição mais recente de nossa conferência bienal.
+            <strong>Puebla, México</strong><br>
+            <small>30 de outubro – 1 de novembro de 2023</small><br>
+            A edição mais recente da nossa conferência bienal.
           </p>
-          <a class="btn btn-outline-primary" href="/pt/historia#clihc2023">Ver detalhes do CLIHC 2023</a>
+          <a class="btn btn-primary" href="/pt/history#clihc2023">Ver detalhes da CLIHC 2023</a>
         </div>
       </div>
     </div>
+
+    <!-- CLIHC 2021 -->
     <div class="col-md-6">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm h-100">
+        <img src="/images/clihc2021.png" class="card-img-top" alt="CLIHC 2021">
         <div class="card-body">
           <h3 class="card-title">CLIHC 2021</h3>
           <p class="card-text">
-            Explore as sessões e recursos de nossa conferência online.
+            <strong>Valparaíso, Chile (online)</strong><br>
+            <small>22–23 de novembro de 2021</small><br>
+            Explore as sessões e os recursos da nossa edição online.
           </p>
-          <a class="btn btn-outline-primary" href="/pt/historia#clihc2021">Ver detalhes do CLIHC 2021</a>
+          <a class="btn btn-primary" href="/pt/history#clihc2021">Ver detalhes da CLIHC 2021</a>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- Novidades e Recursos -->
- <!--
+<!--
 <section class="news-resources">
   <h2 class="text-center fw-bold mb-4">Novidades e Recursos</h2>
   <div class="row g-4">
@@ -81,5 +92,4 @@ const a=`<!-- Sobre a LAIHC -->
     <button class="btn btn-primary btn-lg">Explorar recursos</button>
   </div>
   -->
-</section>
-`;export{a as default};
+</section>`;export{a as default};
