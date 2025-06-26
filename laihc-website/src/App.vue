@@ -1,15 +1,18 @@
 <script setup>
-import Navbar from './components/Navbar.vue'
+import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-	<header>
-		<img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <div class="layout">
+        <header class="bg-light border-bottom">
+            <Navbar />
+        </header>
 
-		<div class="wrapper">
-			<Navbar />
-		</div>
-	</header>
+        <main class="container py-2">
+            <RouterView />
+        </main>
 
-	<RouterView />
+        <Footer />
+    </div>
 </template>

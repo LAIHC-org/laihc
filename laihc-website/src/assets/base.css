@@ -1,86 +1,166 @@
-/* color palette from <https://github.com/vuejs/theme> */
-:root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
-
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
-
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor abarque toda la ventana */
 }
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
+main {
+  flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+.pattern-bg {
+  position: relative;
+  background-image: url('/images/fondo.png');
+  background-repeat: repeat;
+  background-size: 500px 500px;
+  background-position: top left;
+  color: white;
+  text-shadow:
+    0 0 5px rgba(0, 0, 0, 0.7),
+    0 0 10px rgba(0, 0, 0, 0.6),
+    0 0 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
+/* Overlay negro translúcido */
+.pattern-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Ajusta opacidad si lo ves muy oscuro o muy claro */
+  z-index: 0;
 }
 
-body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Asegura que el contenido esté encima del overlay */
+.pattern-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn.btn-shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7),
+              0 0 10px rgba(0, 0, 0, 0.6),
+              0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.btn.btn-primary {
+  background-color: #F4A300 !important;
+  border-color: #ca8700;
+  color: #2E2E2E;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.btn.btn-primary:hover {
+  background-color: #ca8700 !important;  /* más oscuro que el base */
+  border-color: #a86f00;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);  /* mejora legibilidad */
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 6px 2px 6px;
+  display: inline-block;
+}
+
+.nav-link span {
+  position: relative;
+  display: inline-block;
+}
+
+/* Línea naranja exacta al texto */
+.nav-link span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #ffa500;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: center;
+  opacity: 0;
+  box-shadow:
+    0 0 10px rgba(255, 165, 0, 0.5),
+    0 0 12px rgba(255, 140, 0, 0.4),
+    0 0 16px rgba(255, 120, 0, 0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover y ruta activa */
+.nav-link:hover span::after,
+.router-link-exact-active.nav-link span::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+footer {
+  background-color: #575757;
+  color: #f8f9fa;
+}
+
+footer h6,
+footer h5,
+footer p,
+footer li,
+footer a {
+  color: #f8f9fa;
+}
+
+
+footer a:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.footer-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #ffa500;
+  border-radius: 2px;
+  box-shadow:
+    0 0 12px rgba(255, 165, 0, 0.7),
+    0 0 13px rgba(255, 140, 0, 0.5),
+    0 0 21px rgba(255, 120, 0, 0.4);
+  transform: scaleX(0);
+  transform-origin: left;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover::after,
+.router-link-exact-active.footer-link::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.card-wrapper {
+  position: sticky;
+  top: 100px; /* ajusta según tu header */
+}
+.timeline-content {
+  /* opcional para scroll smoother */
+  scroll-margin-top: 120px;
 }

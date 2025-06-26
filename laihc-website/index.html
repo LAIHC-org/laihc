@@ -2,12 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/assets/laihc-azul.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAIHC Website</title>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+
+    <script>
+      if (sessionStorage.redirect) {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        const redirectUrl = new URL(redirect);
+        const appBaseUrl = new URL('/', location.href);
+        if (redirectUrl.origin === appBaseUrl.origin) {
+          const path = redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
+          history.replaceState(null, null, path);
+        }
+      }
+    </script>    
   </body>
 </html>
