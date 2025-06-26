@@ -1,52 +1,81 @@
+:root {
+  --color-text: #042939;
+  --color-text-light: #f8f9fa;
+  --color-accent: #ffa500;
+  --color-btn-bg: #F4A300;
+  --color-btn-hover: #ca8700;
+  --color-btn-hover-dark: #a86f00;
+  --color-footer-bg: #042939;
+  --color-btn-text: #2E2E2E;
+
+  --text-shadow-dark: 0 0 5px rgba(0, 0, 0, 0.7),
+                      0 0 10px rgba(0, 0, 0, 0.6),
+                      0 0 15px rgba(0, 0, 0, 0.5);
+
+  --text-shadow-accent: 0 0 10px rgba(255, 165, 0, 0.5),
+                        0 0 12px rgba(255, 140, 0, 0.4),
+                        0 0 16px rgba(255, 120, 0, 0.3);
+
+  --text-shadow-footer-link: 0 0 12px rgba(255, 165, 0, 0.7),
+                             0 0 13px rgba(255, 140, 0, 0.5),
+                             0 0 21px rgba(255, 120, 0, 0.4);
+}
+
+/* ---------------------------------------- */
+/* Layout base */
+/* ---------------------------------------- */
+
+body {
+  color: var(--color-text);
+}
+
 .layout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asegura que el contenedor abarque toda la ventana */
+  min-height: 100vh;
 }
 
 main {
-  flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+  flex: 1;
 }
+
+/* ---------------------------------------- */
+/* Fondo decorativo */
+/* ---------------------------------------- */
 
 .pattern-bg {
   position: relative;
-  background-image: url('/images/fondo.png');
-  background-repeat: repeat;
-  background-size: 500px 500px;
-  background-position: top left;
-  color: white;
-  text-shadow:
-    0 0 5px rgba(0, 0, 0, 0.7),
-    0 0 10px rgba(0, 0, 0, 0.6),
-    0 0 15px rgba(0, 0, 0, 0.5);
+  background: url('/images/fondo.png') repeat top left / 500px 500px;
+  color: var(--color-text-light);
+  text-shadow: var(--text-shadow-dark);
   overflow: hidden;
 }
 
-/* Overlay negro translúcido */
 .pattern-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Ajusta opacidad si lo ves muy oscuro o muy claro */
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
 
-/* Asegura que el contenido esté encima del overlay */
 .pattern-bg > * {
   position: relative;
   z-index: 1;
 }
 
+/* ---------------------------------------- */
+/* Botones */
+/* ---------------------------------------- */
+
 .btn.btn-shadow {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7),
-              0 0 10px rgba(0, 0, 0, 0.6),
-              0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--text-shadow-dark);
 }
 
 .btn.btn-primary {
-  background-color: #F4A300 !important;
-  border-color: #ca8700;
-  color: #2E2E2E;
+  background-color: var(--color-btn-bg) !important;
+  border-color: var(--color-btn-hover);
+  color: var(--color-btn-text);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -58,17 +87,23 @@ main {
 }
 
 .btn.btn-primary:hover {
-  background-color: #ca8700 !important;  /* más oscuro que el base */
-  border-color: #a86f00;
+  background-color: var(--color-btn-hover) !important;
+  border-color: var(--color-btn-hover-dark);
   color: #ffffff;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.3);  /* mejora legibilidad */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
 }
+
+/* ---------------------------------------- */
+/* Navegación */
+/* ---------------------------------------- */
 
 .nav-link {
   position: relative;
   padding: 0 6px 2px 6px;
   display: inline-block;
+  color: var(--color-text);
+  transition: color 0.3s ease;
 }
 
 .nav-link span {
@@ -76,7 +111,6 @@ main {
   display: inline-block;
 }
 
-/* Línea naranja exacta al texto */
 .nav-link span::after {
   content: "";
   position: absolute;
@@ -84,28 +118,37 @@ main {
   bottom: -2px;
   width: 100%;
   height: 1px;
-  background: #ffa500;
+  background: var(--color-accent);
   border-radius: 2px;
   transform: scaleX(0);
   transform-origin: center;
   opacity: 0;
-  box-shadow:
-    0 0 10px rgba(255, 165, 0, 0.5),
-    0 0 12px rgba(255, 140, 0, 0.4),
-    0 0 16px rgba(255, 120, 0, 0.3);
+  box-shadow: var(--text-shadow-accent);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hover y ruta activa */
 .nav-link:hover span::after,
 .router-link-exact-active.nav-link span::after {
   transform: scaleX(1);
   opacity: 1;
 }
 
+.navbar-light .nav-link {
+  color: var(--color-text);
+}
+
+.navbar-light .nav-link:hover,
+.navbar-light .nav-link.router-link-exact-active {
+  color: var(--color-text);
+}
+
+/* ---------------------------------------- */
+/* Footer */
+/* ---------------------------------------- */
+
 footer {
-  background-color: #575757;
-  color: #f8f9fa;
+  background-color: var(--color-footer-bg);
+  color: var(--color-text-light);
 }
 
 footer h6,
@@ -113,13 +156,7 @@ footer h5,
 footer p,
 footer li,
 footer a {
-  color: #f8f9fa;
-}
-
-
-footer a:hover::after {
-  opacity: 1;
-  transform: scaleX(1);
+  color: var(--color-text-light);
 }
 
 .footer-link {
@@ -128,7 +165,7 @@ footer a:hover::after {
   padding-bottom: 2px;
   transition: color 0.3s;
   text-decoration: none;
-  color: #f8f9fa;
+  color: var(--color-text-light);
 }
 
 .footer-link::after {
@@ -138,12 +175,9 @@ footer a:hover::after {
   left: 0;
   height: 1px;
   width: 100%;
-  background: #ffa500;
+  background: var(--color-accent);
   border-radius: 2px;
-  box-shadow:
-    0 0 12px rgba(255, 165, 0, 0.7),
-    0 0 13px rgba(255, 140, 0, 0.5),
-    0 0 21px rgba(255, 120, 0, 0.4);
+  box-shadow: var(--text-shadow-footer-link);
   transform: scaleX(0);
   transform-origin: left;
   opacity: 0;
@@ -156,11 +190,35 @@ footer a:hover::after {
   transform: scaleX(1);
 }
 
+/* ---------------------------------------- */
+/* Utilidades */
+/* ---------------------------------------- */
+
 .card-wrapper {
   position: sticky;
-  top: 100px; /* ajusta según tu header */
+  top: 100px;
 }
+
 .timeline-content {
-  /* opcional para scroll smoother */
   scroll-margin-top: 120px;
+}
+
+/* ---------------------------------------- */
+/* Corrección de color en tarjetas y acordeones */
+/* ---------------------------------------- */
+
+.card,
+.card * {
+  color: var(--color-text) !important;
+}
+
+.accordion,
+.accordion * {
+  color: var(--color-text) !important;
+}
+
+/* Si deseas que los textos muted (como <small class="text-muted">) sigan en gris Bootstrap */
+.accordion .text-muted,
+.card .text-muted {
+  color: #6c757d !important;
 }

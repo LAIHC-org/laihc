@@ -16,7 +16,7 @@ export default {
 		resources: 'Recursos',
 		contact: 'Contato',
 	},
-	welcome: 'Bem-vindo à <strong>LAIHC</strong>',
+	welcome: 'Bem-vindo à <strong class="text-light">LAIHC</strong>',
 	about: 'Comunidade Latino-Americana de Interação Humano-Computador',
 	cta: 'Descubra o <strong>CLIHC</strong>',
 };
