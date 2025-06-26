@@ -9,7 +9,7 @@ import Footer from "./components/Footer.vue";
             <Navbar />
         </header>
 
-        <main class="container py-4">
+        <main class="container py-2">
             <RouterView />
         </main>
 
