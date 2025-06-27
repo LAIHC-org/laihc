@@ -10,7 +10,7 @@ const menuItems = ['home','about', 'events','contact']
 </script>
 
 <template>
-<footer class="bg-dark border-top text-light py-4 mt-2">
+<footer class="border-top text-light py-4 mt-2">
   <div class="container d-flex flex-column flex-md-row justify-content-between gap-4">
     <div>
       <h5 class="fw-bold">
@@ -61,7 +61,7 @@ const menuItems = ['home','about', 'events','contact']
 			</li>
 			<li>
 			<a
-				href="https://web.facebook.com/sigchilaihc"
+				href="https://web.facebook.com/laihc.org"
 				target="_blank"
 				rel="noopener"
 				class="footer-link"
@@ -96,7 +96,7 @@ const menuItems = ['home','about', 'events','contact']
   </div>
   <div class="text-center mt-4 small">
     © 2025 LAIHC — All rights reserved · <a href="https://www.laihc.org">www.laihc.org</a><br>
-	<a href="CHANGELOG.md" target="_blank">v2.0.1</a>
+	<a href="CHANGELOG.md" target="_blank">v2.0.2</a>
   </div>
 </footer>
 

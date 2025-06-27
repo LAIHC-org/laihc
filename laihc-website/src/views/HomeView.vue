@@ -4,7 +4,7 @@
 		<section class="hero text-center mb-5">
 			<div class="py-5 bg-light rounded shadow-sm pattern-bg">
 				<h1 class="display-4 fw-bold" v-html="$t('welcome')"></h1>
-				<p class="lead fw-bold" v-html="$t('about')"></p>
+				<p class="lead fw-bold text-light" v-html="$t('about')"></p>
 				<div class="d-flex justify-content-center">
 					<RouterLink class="btn btn-primary btn-shadow btn-lg me-2"
 						:to="{ name: `events-${locale}`, hash: '' }">
