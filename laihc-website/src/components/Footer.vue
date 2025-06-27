@@ -96,7 +96,7 @@ const menuItems = ['home','about', 'events','contact']
   </div>
   <div class="text-center mt-4 small">
     © 2025 LAIHC — All rights reserved · <a href="https://www.laihc.org">www.laihc.org</a><br>
-	<a href="CHANGELOG.md" target="_blank">v2.0.1</a>
+	<a href="CHANGELOG.md" target="_blank">v2.0.2</a>
   </div>
 </footer>
 

@@ -1,4 +1,4 @@
-# 🌎 LAIHC Website v2.0.1
+# 🌎 LAIHC Website v2.0.2
 
 Este repositorio contiene el código fuente del sitio web oficial de la **Comunidad Latinoamericana de Interacción Humano-Computadora (LAIHC)**. La aplicación está desarrollada en [Vue.js](https://vuejs.org/) utilizando [Vite](https://vite.dev/) como herramienta de construcción moderna para aplicaciones frontend.
 
