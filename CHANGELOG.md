@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/es/).
 
 - Link to publications related to CLIHC conferences
 
+## [2.0.2] – 2025-06-27
+
+### Changed
+
+- 🎨 Update base CSS: Refined the base stylesheet to align margins and padding across components, improving overall visual consistency.
+
+### Fixed
+
+- 🐛 Correct Facebook page link: Replaced the sigchilaihc URL with the updated laihc.org domain to prevent redirection errors.
+
 ## [2.0.1] - 2025-06-26
 
 ### Removed
