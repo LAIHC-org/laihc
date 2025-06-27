@@ -10,7 +10,7 @@ const menuItems = ['home','about', 'events','contact']
 </script>
 
 <template>
-<footer class="bg-dark border-top text-light py-4 mt-2">
+<footer class="border-top text-light py-4 mt-2">
   <div class="container d-flex flex-column flex-md-row justify-content-between gap-4">
     <div>
       <h5 class="fw-bold">
@@ -61,7 +61,7 @@ const menuItems = ['home','about', 'events','contact']
 			</li>
 			<li>
 			<a
-				href="https://web.facebook.com/sigchilaihc"
+				href="https://web.facebook.com/laihc.org"
 				target="_blank"
 				rel="noopener"
 				class="footer-link"
