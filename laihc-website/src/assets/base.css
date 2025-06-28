@@ -1,12 +1,14 @@
 :root {
-  --color-text: #042939;
+  --color-text: #192B39;
   --color-text-light: #f8f9fa;
   --color-accent: #ffa500;
   --color-btn-bg: #F4A300;
-  --color-btn-hover: #ca8700;
-  --color-btn-hover-dark: #a86f00;
-  --color-footer-bg: #042939;
+  --color-btn-hover: #FE5F55;
+  --color-btn-hover-dark: #D81159;
+  --color-links: #D81159;
+  --color-footer-bg: #192B39;
   --color-btn-text: #2E2E2E;
+  --color-bg-gray: #F4F4F4;
 
   --text-shadow-dark: 0 0 5px rgba(0, 0, 0, 0.7),
                       0 0 10px rgba(0, 0, 0, 0.6),
@@ -51,11 +53,30 @@ main {
   overflow: hidden;
 }
 
+.pattern-gray-bg {
+  position: relative;
+  background: url('/images/fondo-gray.png') repeat top left / 500px 500px;
+  color: var(--color-text);
+  overflow: hidden;
+}
+
+.gray-bg {
+  background-color: var(--color-bg-gray);
+  color: var(--color-text);
+}
+
 .pattern-bg::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.pattern-gray-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   z-index: 0;
 }
 
@@ -74,14 +95,23 @@ main {
 
 .btn.btn-primary {
   background-color: var(--color-btn-bg) !important;
-  border-color: var(--color-btn-hover);
-  color: var(--color-btn-text);
-  padding: 10px 20px;
+  border-color: var(--color-btn-bg);
+  color: var(--color-btn-text) !important;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 14px;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.btn.btn-outline-secondary{
+  border-color: var(--color-text) !important;
+  color: var(--color-text) !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
   cursor: pointer;
   text-shadow: none;
 }
@@ -89,7 +119,15 @@ main {
 .btn.btn-primary:hover {
   background-color: var(--color-btn-hover) !important;
   border-color: var(--color-btn-hover-dark);
-  color: #ffffff;
+  color: #ffffff !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn.btn-outline-secondary:hover {
+  background-color: var(--color-text) !important;
+  border-color: var(--color-btn-hover-dark);
+  color: #ffffff !important;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
 }
@@ -140,6 +178,35 @@ main {
 .navbar-light .nav-link:hover,
 .navbar-light .nav-link.router-link-exact-active {
   color: var(--color-text);
+}
+
+/* ---------------------------------------- */
+/* Body */
+/* ---------------------------------------- */
+
+.link {
+  position: relative;
+  display: inline-block;
+  color: var(--color-links);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 1px;
+  background-color: currentColor;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
 }
 
 /* ---------------------------------------- */

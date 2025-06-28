@@ -1,6 +1,6 @@
 <template>
 	<div v-if="htmlContent" v-html="htmlContent"></div>
-	<div v-else class="text-center py-5">
+	<div v-else class="text-center py-4">
 		<!-- opcional: un spinner o mensaje de carga -->
 		Cargando contenido…
 	</div>
