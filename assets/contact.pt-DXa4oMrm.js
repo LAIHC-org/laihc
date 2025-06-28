@@ -1,0 +1,33 @@
+const a=`<section class="contact container py-4" lang="pt">
+  <div class="p-5 bg-light rounded shadow-sm pattern-gray-bg">
+    <h1 class="fw-bold mb-4">Contato <strong>LAIHC</strong></h1>
+
+    <p class="mb-4">
+      Se você tiver dúvidas sobre a LAIHC, quiser colaborar ou acompanhar nossos eventos e iniciativas, entre em contato
+      conosco ou siga nossos canais oficiais.
+    </p>
+  </div>
+
+  <div class="mb-4">
+    <h2 class="fw-semibold">E-mail</h2>
+    <p>
+      <a href="mailto:laihc.officers@gmail.com" class="btn btn-primary">
+        laihc.officers@gmail.com
+      </a>
+    </p>
+  </div>
+
+  <div>
+    <h2 class="fw-semibold">Siga-nos nas redes sociais</h2>
+    <ul class="list-unstyled">
+      <li><a class="link" href="https://web.facebook.com/laihc.org" target="_blank"><span><i class="fab fa-facebook me-2"></i>LAIHC
+          Facebook</span></a></li>
+      <li><a class="link" href="https://web.facebook.com/clihc" target="_blank"><span><i class="fab fa-facebook me-2"></i>CLIHC
+          Facebook</span></a></li>
+      <!--
+      <li><a class="link" href="https://x.com/clihc2023" target="_blank">X (antigo Twitter) – CLIHC 2023</a></li>
+      <li><a class="link" href="https://x.com/acmlaihc" target="_blank">X – ACM LAIHC</a></li>
+      -->
+    </ul>
+  </div>
+</section>`;export{a as default};

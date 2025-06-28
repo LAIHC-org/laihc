@@ -1,19 +1,22 @@
-const a=`<section class="about container py-5" lang="es">
-  <h1 class="fw-bold mb-4">Acerca de <strong>LAIHC</strong></h1>
+const a=`<section class="about container py-4" lang="es">
+  <div class="p-5 bg-light rounded shadow-sm pattern-gray-bg">
+    <h1 class="fw-bold mb-4">Acerca de <strong>LAIHC</strong></h1>
+    <p>
+      La <strong>Comunidad Latinoamericana de Interacción Humano-Computadora (LAIHC)</strong> es una red regional independiente de
+      investigadores, profesionales y estudiantes dedicada a promover el avance de la Interacción Humano-Computadora
+      (IHC)
+      en América Latina. Su misión es fomentar la colaboración, el intercambio de conocimiento y el desarrollo regional
+      mediante la investigación, la educación y la práctica en IHC.
+    </p>
+    <p>
+      LAIHC organiza el <strong><a class="link" href="/es/historia">Congreso Latinoamericano de Interacción Humano-Computadora (CLIHC)</a></strong>, un evento bienal que reúne a
+      la comunidad de IHC para compartir ideas, métodos y tecnologías emergentes. Además, impulsa iniciativas
+      inclusivas,
+      accesibles y culturalmente relevantes en el diseño y evaluación de la interacción digital.
+    </p>
+  </div>
 
-  <p>
-    La Comunidad Latinoamericana de Interacción Humano-Computadora (LAIHC) es una red regional independiente de
-    investigadores, profesionales y estudiantes dedicada a promover el avance de la Interacción Humano-Computadora (IHC)
-    en América Latina. Su misión es fomentar la colaboración, el intercambio de conocimiento y el desarrollo regional
-    mediante la investigación, la educación y la práctica en IHC.
-  </p>
-  <p>
-    LAIHC organiza el Congreso Latinoamericano de Interacción Humano-Computadora (CLIHC), un evento bienal que reúne a
-    la comunidad de IHC para compartir ideas, métodos y tecnologías emergentes. Además, impulsa iniciativas inclusivas,
-    accesibles y culturalmente relevantes en el diseño y evaluación de la interacción digital.
-  </p>
-
-  <div class="accordion mt-5" id="laihcBoards-es">
+  <div class="accordion mt-4" id="laihcBoards-es">
     <div class="accordion-item">
       <h2 class="accordion-header" id="heading-es-2023">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-es-2023"

@@ -1,25 +1,26 @@
-const n=`<section class="clihc container py-5">
-  <h1 class="fw-bold mb-4">History of <strong>CLIHC</strong></h1>
+const n=`<section class="clihc container py-4">
+  <div class="p-5 mb-4 bg-light rounded shadow-sm pattern-gray-bg">
+    <h1 class="fw-bold mb-4">History of <strong>CLIHC</strong></h1>
 
-  <p class="lead text-muted mb-5">
-    Since its inaugural edition in 2003 in Rio de Janeiro, the Latin American Conference on Human–Computer
-    Interaction (<em>CLIHC</em>) has established itself as the biennial benchmark forum in Latin America for
-    researchers, professionals, and students in the field of human–computer interaction. Each edition tackles
-    emerging challenges—such as accessibility, inclusive design, and ubiquitous technologies—and strengthens
-    the regional community through keynotes, workshops, presentations, and academic exchange.
-  </p>
-
+    <p>
+      Since its inaugural edition in 2003 in Rio de Janeiro, the <strong>Latin American Conference on Human–Computer
+      Interaction (<em>CLIHC</em>)</strong> has established itself as the biennial benchmark forum in Latin America for
+      researchers, professionals, and students in the field of human–computer interaction. Each edition tackles
+      emerging challenges—such as accessibility, inclusive design, and ubiquitous technologies—and strengthens
+      the regional community through keynotes, workshops, presentations, and academic exchange.
+    </p>
+  </div>
   <!-- BLOCK 2023 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-3 py-4 timeline-block" id="clihc2023">
     <div class="col-md-4">
       <div class="card-wrapper">
         <div class="card shadow-sm">
-          <img src="/images/clihc2023.png" class="card-img-top" alt="CLIHC 2023">
+          <img src="/images/clihc2023.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2023</h5>
+            <h2 class="card-title">CLIHC 2023</h2>
             <p class="card-text mb-1"><strong>Puebla, Mexico</strong><br><small>Oct 30 – Nov 1, 2023</small></p>
             <a href="https://clihc2023.laihc.org/en" target="_blank"
-              class="btn btn-sm btn-outline-primary w-100 mb-1">Official website</a>
+              class="btn btn-sm btn-primary w-100 mb-1">Official website</a>
             <a href="https://dl.acm.org/doi/proceedings/10.1145/3630970" target="_blank"
               class="btn btn-sm btn-outline-secondary w-100">Proceedings</a>
           </div>
@@ -28,7 +29,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2023">2023</h3>
         <p>
           From <strong>October 30 to November 1, 2023</strong>, the city of <strong>Puebla, Mexico</strong>, hosted the
           <strong>eleventh edition</strong> of the <em>Latin American Conference on Human–Computer Interaction
@@ -38,7 +38,7 @@ const n=`<section class="clihc container py-5">
           broadcasts in a <strong>hybrid format</strong> that encouraged both regional and international participation.
         </p>
         <p>
-          The <em>Call for Papers</em> was conducted through the <a href="https://easychair.org/cfp/clihc2023"
+          The <em>Call for Papers</em> was conducted through the <a class="link" href="https://easychair.org/cfp/clihc2023"
             target="_blank" rel="noopener"><strong>EasyChair</strong></a> platform, inviting submissions in the
           categories
           of <strong>full papers</strong>, <strong>short papers</strong>, and <strong>posters</strong>. The process
@@ -48,11 +48,11 @@ const n=`<section class="clihc container py-5">
           in a diverse and high-quality call.
         </p>
         <p>
-          The <a href="https://clihc2023.laihc.org/en/schedule" target="_blank" rel="noopener"><strong>conference
+          The <a class="link" href="https://clihc2023.laihc.org/en/schedule" target="_blank" rel="noopener"><strong>conference
               program</strong></a>
           included <strong>keynote talks</strong>, <strong>thematic panels</strong>, and <strong>poster
             sessions</strong>,
-          enriched by the participation of <a href="https://clihc2023.laihc.org/en/keynote-speakers" target="_blank"
+          enriched by the participation of <a class="link" href="https://clihc2023.laihc.org/en/keynote-speakers" target="_blank"
             rel="noopener">notable speakers</a>
           whose credentials were shared through official channels. One standout event was the workshop
           <em>“Exploring cultural data from UNESCO using semantic technologies”</em>, offering a hands-on exploration of
@@ -74,15 +74,15 @@ const n=`<section class="clihc container py-5">
         </p>
         <p>
           The official proceedings were published by the <strong>Association for Computing Machinery (ACM)</strong>,
-          under DOI <a href="https://dl.acm.org/doi/proceedings/10.1145/3630970" target="_blank"
+          under DOI <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/3630970" target="_blank"
             rel="noopener"><strong>10.1145/3630970</strong></a>.
-          They are available in the <a href="https://dl.acm.org/doi/proceedings/10.1145/3630970" target="_blank"
+          They are available in the <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/3630970" target="_blank"
             rel="noopener">ACM Digital Library</a>
-          and indexed in <a href="https://dblp.org/db/conf/clihc/clihc2023.html" target="_blank"
+          and indexed in <a class="link" href="https://dblp.org/db/conf/clihc/clihc2023.html" target="_blank"
             rel="noopener">DBLP</a>.
         </p>
         <p>
-          The official website, <a href="https://clihc2023.laihc.org/" target="_blank"
+          The official website, <a class="link" href="https://clihc2023.laihc.org/" target="_blank"
             rel="noopener"><strong>clihc2023.laihc.org</strong></a>,
           remains available as a digital archive with the full program, keynote recordings, and supplementary materials.
         </p>
@@ -97,16 +97,16 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2021 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-3 py-4 timeline-block gray-bg" id="clihc2021">
     <div class="col-md-4">
       <div class="card-wrapper">
         <div class="card shadow-sm">
-          <img src="/images/clihc2021.png" class="card-img-top" alt="CLIHC 2021">
+          <img src="/images/clihc2021.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2021</h5>
+            <h2 class="card-title">CLIHC 2021</h2>
             <p class="card-text mb-1"><strong>Virtual (Valparaíso, Chile)</strong><br><small>Nov 22–23, 2021</small></p>
             <a href="https://clihc2021.laihc.org/" target="_blank"
-              class="btn btn-sm btn-outline-primary w-100 mb-1">Official website</a>
+              class="btn btn-sm btn-primary w-100 mb-1">Official website</a>
             <a href="https://dl.acm.org/doi/proceedings/10.1145/3488392" target="_blank"
               class="btn btn-sm btn-outline-secondary w-100">Proceedings</a>
           </div>
@@ -115,7 +115,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2021">2021</h3>
         <p>
           From <strong>November 22 to 23, 2021</strong>, the tenth edition of the Latin American Conference on
           Human–Computer Interaction (CLIHC) took place, organized from <strong>Valparaíso, Chile</strong>. Due to the
@@ -145,14 +144,14 @@ const n=`<section class="clihc container py-5">
         </p>
         <p>
           The <strong>official proceedings</strong> were published by the <em>Association for Computing Machinery
-            (ACM)</em> under DOI <a href="https://dl.acm.org/doi/proceedings/10.1145/3488392" target="_blank"
-            rel="noopener">10.1145/3488392</a>, available in the <a
+            (ACM)</em> under DOI <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/3488392" target="_blank"
+            rel="noopener">10.1145/3488392</a>, available in the <a class="link"
             href="https://dl.acm.org/doi/proceedings/10.1145/3488392" target="_blank" rel="noopener">ACM Digital
-            Library</a> and indexed in <a href="https://dblp.org/db/conf/clihc/clihc2021.html" target="_blank"
+            Library</a> and indexed in <a class="link" href="https://dblp.org/db/conf/clihc/clihc2021.html" target="_blank"
             rel="noopener">DBLP</a>.
         </p>
         <p>
-          The <a href="https://clihc2021.laihc.org/" target="_blank" rel="noopener">official website</a> offered full
+          The <a class="link" href="https://clihc2021.laihc.org/" target="_blank" rel="noopener">official website</a> offered full
           access to the program, session links, speaker profiles, and supporting materials, becoming a permanent archive
           of this historic edition.
         </p>
@@ -161,19 +160,19 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2019 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-2 py-4 timeline-block" id="clihc2019">
     <div class="col-md-4">
       <div class="card-wrapper">
         <div class="card shadow-sm">
-          <img src="/images/clihc2019.png" class="card-img-top" alt="CLIHC 2019">
+          <img src="/images/clihc2019.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2019</h5>
+            <h2 class="card-title">CLIHC 2019</h2>
             <p class="card-text mb-1">
               <strong>Panama City, Panama</strong><br>
               <small class="text-muted">September 30 – October 4, 2019</small>
             </p>
             <a href="https://web.archive.org/web/20240510201131/https://clihc2019.laihc.org/" target="_blank"
-              rel="noopener" class="btn btn-sm btn-outline-primary mb-1 w-100">Official website (Archive)</a>
+              rel="noopener" class="btn btn-sm btn-primary mb-1 w-100">Official website (Archive)</a>
             <a href="https://dl.acm.org/doi/proceedings/10.1145/3358961" target="_blank" rel="noopener"
               class="btn btn-sm btn-outline-secondary w-100">Proceedings</a>
           </div>
@@ -182,7 +181,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2019">2019</h3>
         <p>
           From <strong>September 30 to October 4, 2019</strong>, the <strong>ninth edition</strong> of CLIHC was held in
           <strong>Panama City, Panama</strong>,
@@ -206,11 +204,11 @@ const n=`<section class="clihc container py-5">
         </p>
         <p>
           The <strong>official proceedings</strong> were published by ACM under DOI
-          <a href="https://dl.acm.org/doi/proceedings/10.1145/3358961" target="_blank"
+          <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/3358961" target="_blank"
             rel="noopener">10.1145/3358961</a>,
-          available in the <a href="https://dl.acm.org/doi/proceedings/10.1145/3358961" target="_blank"
+          available in the <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/3358961" target="_blank"
             rel="noopener">ACM Digital Library</a>
-          and referenced in the academic index <a href="https://dblp.org/db/conf/clihc/clihc2019.html" target="_blank"
+          and referenced in the academic index <a class="link" href="https://dblp.org/db/conf/clihc/clihc2019.html" target="_blank"
             rel="noopener">DBLP</a>.
         </p>
       </div>
@@ -218,19 +216,19 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2017 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-2 py-4 timeline-block gray-bg" id="clihc2017">
     <div class="col-md-4">
       <div class="card-wrapper">
         <div class="card shadow-sm">
-          <img src="/images/clihc2017.png" class="card-img-top" alt="CLIHC 2017">
+          <img src="/images/clihc2017.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2017</h5>
+            <h2 class="card-title">CLIHC 2017</h2>
             <p class="card-text mb-1">
               <strong>Antigua Guatemala, Guatemala</strong><br>
               <small class="text-muted">November 8 – 10, 2017</small>
             </p>
             <a href="https://web.archive.org/web/20210309013914/https://fce.ufm.edu/clihc2017/" target="_blank"
-              rel="noopener" class="btn btn-sm btn-outline-primary mb-1 w-100">Official website (Archive)</a>
+              rel="noopener" class="btn btn-sm btn-primary mb-1 w-100">Official website (Archive)</a>
             <a href="https://dl.acm.org/doi/proceedings/10.1145/3151470" target="_blank" rel="noopener"
               class="btn btn-sm btn-outline-secondary w-100">Proceedings</a>
           </div>
@@ -239,7 +237,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2017">2017</h3>
         <p>
           The eighth edition (VIII CLIHC) was held from <strong>November 8 to 10, 2017</strong> in the historic city of
           <strong>Antigua Guatemala</strong>.
@@ -259,12 +256,12 @@ const n=`<section class="clihc container py-5">
         </p>
         <p>
           The <strong>Proceedings</strong> were published by ACM under DOI
-          <a href="https://dl.acm.org/doi/proceedings/10.1145/3151470" target="_blank">10.1145/3151470</a> and are
-          available in the ACM Digital Library as well as indexed in <a
+          <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/3151470" target="_blank">10.1145/3151470</a> and are
+          available in the ACM Digital Library as well as indexed in <a class="link"
             href="https://dblp.org/db/conf/clihc/clihc2017.html" target="_blank">DBLP</a>.
         </p>
         <p>
-          The <strong>original official website</strong> has been lost, but is still accessible through the <a
+          The <strong>original official website</strong> has been lost, but is still accessible through the <a class="link"
             href="https://web.archive.org/web/20210309013914/https://fce.ufm.edu/clihc2017/" target="_blank">Wayback
             Machine archive</a>.
         </p>
@@ -273,19 +270,19 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2015 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-2 py-4 timeline-block" id="clihc2015">
     <div class="col-md-4">
       <div class="card-wrapper">
         <div class="card shadow-sm">
-          <img src="/images/clihc2015.png" class="card-img-top" alt="CLIHC 2015">
+          <img src="/images/clihc2015.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2015</h5>
+            <h2 class="card-title">CLIHC 2015</h2>
             <p class="card-text mb-1">
               <strong>Córdoba, Argentina</strong><br>
               <small class="text-muted">November 18 – 21, 2015</small>
             </p>
             <a href="https://web.archive.org/web/20230609121626/https://isa.ixda.org/2015/CLIHC.html" target="_blank"
-              rel="noopener" class="btn btn-sm btn-outline-primary mb-1 w-100">Official website (Archive)</a>
+              rel="noopener" class="btn btn-sm btn-primary mb-1 w-100">Official website (Archive)</a>
             <a href="https://dl.acm.org/doi/proceedings/10.1145/2824893" target="_blank" rel="noopener"
               class="btn btn-sm btn-outline-secondary w-100">Proceedings</a>
           </div>
@@ -294,7 +291,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2015">2015</h3>
         <p>
           The seventh edition (VII CLIHC) took place from <strong>November 18 to 21, 2015</strong> in <strong>Córdoba,
             Argentina</strong>,
@@ -312,8 +308,8 @@ const n=`<section class="clihc container py-5">
         </p>
         <p>
           The <strong>Proceedings</strong> were published by ACM under DOI
-          <a href="https://dl.acm.org/doi/proceedings/10.1145/2824893" target="_blank">10.1145/2824893</a> and are
-          available in the ACM Digital Library and <a href="https://dblp.org/db/conf/clihc/clihc2015.html"
+          <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/2824893" target="_blank">10.1145/2824893</a> and are
+          available in the ACM Digital Library and <a class="link" href="https://dblp.org/db/conf/clihc/clihc2015.html"
             target="_blank">DBLP</a>.
         </p>
         <p>
@@ -325,20 +321,20 @@ const n=`<section class="clihc container py-5">
     </div>
   </div>
 
-  <!-- BLOCK 2013 -->
-  <div class="row mb-5 timeline-block">
+  <!-- BLOCK 2013 --> 
+  <div class="row p-2 py-4 timeline-block gray-bg" id="clihc2013">
     <div class="col-md-4">
       <div class="card-wrapper">
         <div class="card shadow-sm">
-          <img src="/images/clihc2013.png" class="card-img-top" alt="CLIHC 2013">
+          <img src="/images/clihc2013.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2013</h5>
+            <h2 class="card-title">CLIHC 2013</h2>
             <p class="card-text mb-1">
               <strong>Carrillo, Guanacaste, Costa Rica</strong><br>
               <small class="text-muted">December 2 – 6, 2013</small>
             </p>
             <a href="http://web.archive.org/web/20130611211017/http://mami.uclm.es/ucamiiwaal2013/index.php"
-              target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary mb-1 w-100">Official website
+              target="_blank" rel="noopener" class="btn btn-sm btn-primary mb-1 w-100">Official website
               (Archive)</a>
             <a href="https://link.springer.com/book/10.1007/978-3-319-03068-5" target="_blank" rel="noopener"
               class="btn btn-sm btn-outline-secondary w-100">Proceedings</a>
@@ -348,7 +344,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2013">2013</h3>
         <p>
           The sixth edition (VI CLIHC) was held from <strong>December 2 to 6, 2013</strong> in
           <strong>Carrillo</strong>,
@@ -362,7 +357,7 @@ const n=`<section class="clihc container py-5">
           multimodal interfaces, HCI in education, and assistive technologies.
         </p>
         <p>
-          The proceedings were published in <a href="https://link.springer.com/book/10.1007/978-3-319-03068-5"
+          The proceedings were published in <a class="link" href="https://link.springer.com/book/10.1007/978-3-319-03068-5"
             target="_blank">
             Springer LNCS vol. 8278 (ISBN 978‑3‑319‑03068‑5)</a> and are available on Springer’s platform.
         </p>
@@ -375,19 +370,19 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2011 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-2 py-4 timeline-block" id="clihc2011">
     <div class="col-md-4">
       <div class="card-wrapper">
         <div class="card shadow-sm">
-          <img src="/images/clihc2011.png" class="card-img-top" alt="CLIHC 2011">
+          <img src="/images/clihc2011.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2011</h5>
+            <h2 class="card-title">CLIHC 2011</h2>
             <p class="card-text mb-1">
               <strong>Porto de Galinhas, Brazil</strong><br>
               <small class="text-muted">October 25 – 28, 2011</small>
             </p>
             <a href="https://www.cin.ufpe.br/~ihc_clihc2011/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-outline-primary mb-1 w-100">Official website</a>
+              class="btn btn-sm btn-primary mb-1 w-100">Official website</a>
             <a href="https://dl.acm.org/doi/proceedings/10.5555/2254436" target="_blank" rel="noopener"
               class="btn btn-sm btn-outline-secondary w-100">Proceedings</a>
           </div>
@@ -396,7 +391,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2011">2011</h3>
         <p>
           The fifth edition (V CLIHC) was held from <strong>October 25 to 28, 2011</strong> in
           <strong>Porto de Galinhas, Brazil</strong>, in conjunction with the
@@ -409,7 +403,7 @@ const n=`<section class="clihc container py-5">
         </p>
         <p>
           The <strong>Proceedings</strong> were published under the combined volume of both events with DOI
-          <a href="https://dl.acm.org/doi/proceedings/10.5555/2254436" target="_blank">10.5555/2254436</a>,
+          <a class="link" href="https://dl.acm.org/doi/proceedings/10.5555/2254436" target="_blank">10.5555/2254436</a>,
           and are available in the ACM Digital Library and indexed in DBLP.
         </p>
         <p>
@@ -421,18 +415,18 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2009 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-2 py-4 timeline-block gray-bg" id="clihc2009">
     <div class="col-md-4">
       <div class="card-wrapper">
         <div class="card shadow-sm">
-          <img src="/images/clihc2009.png" class="card-img-top" alt="CLIHC 2009">
+          <img src="/images/clihc2009.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2009</h5>
+            <h2 class="card-title">CLIHC 2009</h2>
             <p class="card-text mb-1">
               <strong>Mérida, Yucatán, Mexico</strong><br>
               <small class="text-muted">November 9 – 11, 2009</small>
             </p>
-            <a class="btn btn-sm btn-outline-primary mb-1 w-100"
+            <a class="btn btn-sm btn-primary mb-1 w-100"
               href="https://web.archive.org/web/20121204200943/http://latin-web.org/clihc09/" role="button">
               Official Website (Archive)
             </a>
@@ -444,7 +438,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2009">2009</h3>
         <p>
           The fourth edition (IV CLIHC), held from <strong>November 9 to 11, 2009</strong> in
           <strong>Mérida, Yucatán, Mexico</strong>, took place jointly with the seventh edition of the
@@ -457,10 +450,10 @@ const n=`<section class="clihc container py-5">
           posters, and tutorials.
         </p>
         <p>
-          The proceedings were published by the IEEE Computer Society (<a
+          The proceedings were published by the IEEE Computer Society (<a class="link"
             href="https://ieeexplore.ieee.org/xpl/conhome/5341505/proceeding"
             target="_blank">ISBN 978‑0‑7695‑3856‑3</a>) and are listed in DBLP as
-          <a href="https://dblp.org/db/conf/la-web/la-web2009.html" target="_blank">LA-WEB/CLIHC 2009</a>.
+          <a class="link" href="https://dblp.org/db/conf/la-web/la-web2009.html" target="_blank">LA-WEB/CLIHC 2009</a>.
         </p>
         <p>
           The event was chaired by <strong>General Chair</strong> <strong>Mónica Tentori</strong>
@@ -471,20 +464,20 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2007 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-2 py-4 timeline-block" id="clihc2007">
     <div class="col-md-4">
       <div class="card-wrapper">
         <!--Card-->
         <div class="card shadow-sm">
-          <img src="/images/clihc2007.png" class="card-img-top" alt="CLIHC 2007">
+          <img src="/images/clihc2007.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2007</h5>
+            <h2 class="card-title">CLIHC 2007</h2>
             <p class="card-text mb-1">
               <strong>Rio de Janeiro, Brazil</strong><br>
               <small class="text-muted">September 10–11, 2007</small>
             </p>
             <a href="https://web.archive.org/web/20210724103610/https://clihc2007.laihc.org/"
-              class="btn btn-sm btn-outline-primary mb-1 w-100" target="_blank" rel="noopener">
+              class="btn btn-sm btn-primary mb-1 w-100" target="_blank" rel="noopener">
               Official Website (Archive)
             </a>
             <a href="https://web.archive.org/web/20210724102223/https://clihc2007.laihc.org/program.html"
@@ -497,7 +490,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2007">2007</h3>
         <p>
           The third edition (III CLIHC) was held on <strong>September 10 and 11, 2007</strong> in
           <strong>Rio de Janeiro, Brazil</strong>, in conjunction with the
@@ -508,7 +500,7 @@ const n=`<section class="clihc container py-5">
           region's cultural richness.
         </p>
         <p>
-          A total of <a href="https://web.archive.org/web/20210724102223/https://clihc2007.laihc.org/program.html"
+          A total of <a class="link" href="https://web.archive.org/web/20210724102223/https://clihc2007.laihc.org/program.html"
             target="_blank"><strong>42 papers</strong></a> (16 full and 9 short) were presented in English, Spanish, or
           Portuguese, covering topics such as multimodal interfaces, tangible interaction, accessibility, data
           visualization, and games. A poster session and a dedicated working day on Latin American identity in HCI were
@@ -535,20 +527,20 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2005 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-2 py-4 timeline-block gray-bg" id="clihc2005">
     <div class="col-md-4">
       <div class="card-wrapper">
         <!--Card-->
         <div class="card shadow-sm">
-          <img src="/images/clihc2005.png" class="card-img-top" alt="CLIHC 2005">
+          <img src="/images/clihc2005.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2005</h5>
+            <h2 class="card-title">CLIHC 2005</h2>
             <p class="card-text mb-1">
               <strong>Cuernavaca, Mexico</strong><br>
               <small class="text-muted">October 23–26, 2005</small>
             </p>
             <a href="https://web.archive.org/web/20231026090421/https://clihc2005.laihc.org/index.html" target="_blank"
-              rel="noopener" class="btn btn-sm btn-outline-primary mb-1 w-100">
+              rel="noopener" class="btn btn-sm btn-primary mb-1 w-100">
               Official Website (Archive)
             </a>
             <a href="https://dl.acm.org/doi/proceedings/10.1145/1111360" target="_blank" rel="noopener"
@@ -561,7 +553,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2005">2005</h3>
         <p>
           The <strong>second edition</strong> of the Latin American Conference on Human‑Computer Interaction (CLIHC) was
           held
@@ -570,7 +561,7 @@ const n=`<section class="clihc container py-5">
           and professionals from across the region in a fully in-person format.
         </p>
         <p>
-          <a href="https://dl.acm.org/doi/proceedings/10.1145/1111360" target="_blank"><em>Proceedings</em> published by
+          <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/1111360" target="_blank"><em>Proceedings</em> published by
             the
             <strong>ACM</strong></a> include 51 works covering topics such as usability, accessibility, mobile
           interfaces, and
@@ -592,20 +583,20 @@ const n=`<section class="clihc container py-5">
   </div>
 
   <!-- BLOCK 2003 -->
-  <div class="row mb-5 timeline-block">
+  <div class="row p-2 py-4 timeline-block" id="clihc2003">
     <div class="col-md-4">
       <div class="card-wrapper">
         <!--Card-->
         <div class="card shadow-sm">
-          <img src="/images/clihc2003.png" class="card-img-top" alt="CLIHC 2003">
+          <img src="/images/clihc2003.png" class="card-img-top" alt="">
           <div class="card-body p-3">
-            <h5 class="card-title">CLIHC 2003</h5>
+            <h2 class="card-title">CLIHC 2003</h2>
             <p class="card-text mb-1">
               <strong>Rio de Janeiro, Brazil</strong><br>
               <small class="text-muted">November 17–20, 2003</small>
             </p>
             <a href="http://clihc2003.inf.puc-rio.br/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-outline-primary mb-1 w-100">Official Website</a>
+              class="btn btn-sm btn-primary mb-1 w-100">Official Website</a>
             <a href="https://dl.acm.org/doi/proceedings/10.1145/944519" target="_blank" rel="noopener"
               class="btn btn-sm btn-outline-secondary w-100">Proceedings</a>
           </div>
@@ -614,7 +605,6 @@ const n=`<section class="clihc container py-5">
     </div>
     <div class="col-md-8">
       <div class="timeline-content">
-        <h3 class="year" id="clihc2003">2003</h3>
         <p>
           The first edition (CLIHC I) was held from <strong>November 17 to 20, 2003</strong> in <strong>Rio de Janeiro,
             Brazil</strong>,
@@ -623,7 +613,7 @@ const n=`<section class="clihc container py-5">
           community in this field.
         </p>
         <p>
-          The <em>proceedings</em> were published in the <a href="https://dl.acm.org/doi/proceedings/10.1145/944519"
+          The <em>proceedings</em> were published in the <a class="link" href="https://dl.acm.org/doi/proceedings/10.1145/944519"
             target="_blank">
             ACM Digital Library (ISBN 978‑1‑4503‑4324‑4)</a>, including selected works on tangible interfaces,
           accessibility,

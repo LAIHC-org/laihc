@@ -1,5 +1,5 @@
 const a=`<!-- Sobre a LAIHC -->
-<section class="about mb-5">
+<section class="about my-5">
   <h2 class="fw-bold text-center">O que é a Comunidade Latino-Americana de IHC (LAIHC)?</h2>
   <p>
     A Comunidade Latino-Americana de IHC (LAIHC) é uma rede regional independente de pesquisadores,
