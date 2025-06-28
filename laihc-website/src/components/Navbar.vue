@@ -22,7 +22,7 @@ const menuItems = ['home','about', 'events','contact']
         <img
           src="@/assets/laihc-azul.svg"
           alt="LAIHC"
-          style="height:64px; top:-5px; position:relative;"
+          style="height:64px; position:relative;"
         />
       </RouterLink>
 

@@ -6,70 +6,46 @@ const { t, locale } = useI18n()
 const currentLocale = computed(() => locale.value)
 
 // Claves deben coincidir con las de localizedPaths.js
-const menuItems = ['home','about', 'events','contact']
+const menuItems = ['home', 'about', 'events', 'contact']
 </script>
 
 <template>
-<footer class="border-top text-light py-4 mt-2">
-  <div class="container d-flex flex-column flex-md-row justify-content-between gap-4">
-    <div>
-      <h5 class="fw-bold">
-		<RouterLink
-			class="navbar-brand"
-			:to="{ name: `home-${currentLocale}` }"
-		>
-			<img
-			src="@/assets/laihc-blanco.svg"
-			alt="LAIHC"
-			style="height:64px; top:-5px; position:relative;"
-			/>
-		</RouterLink>
-	  </h5>
-      <p class="mb-0" v-html="$t('about')"></p>
-    </div>
+	<footer class="border-top text-light py-4 mt-2">
+		<div class="container d-flex flex-column flex-md-row justify-content-between gap-4">
+			<div>
+				<p class="fw-bold h5">
+					<RouterLink class="navbar-brand" :to="{ name: `home-${currentLocale}` }">
+						<img src="@/assets/laihc-blanco.svg" alt="LAIHC" style="height:64px; position:relative;" />
+					</RouterLink>
+				</p>
+				<p class="mb-0" v-html="$t('about')"></p>
+			</div>
 
-    <div>
-      <h6 class="fw-semibold mb-2">Navigation</h6>
-      <ul class="list-unstyled mb-0">
-        <li
-            v-for="key in menuItems"
-            :key="key"
-            class="nav-item"
-          >
-            <RouterLink
-              class="footer-link"
-              :to="{ name: `${key}-${currentLocale}` }"
-            >
-              <span v-html="t(`navbar.${key}`)"></span>
-            </RouterLink>
-          </li>
-      </ul>
-    </div>
+			<div>
+				<p class="fw-semibold mb-2 h6">Navigation</p>
+				<ul class="list-unstyled mb-0">
+					<li v-for="key in menuItems" :key="key" class="nav-item">
+						<RouterLink class="footer-link" :to="{ name: `${key}-${currentLocale}` }">
+							<span v-html="t(`navbar.${key}`)"></span>
+						</RouterLink>
+					</li>
+				</ul>
+			</div>
 
-    <div>
-		<h6 class="fw-semibold mb-2">Follow us</h6>
-		<ul class="list-unstyled mb-0">
-			<li>
-			<a
-				href="https://web.facebook.com/clihc"
-				target="_blank"
-				rel="noopener"
-				class="footer-link"
-			>
-				<i class="fab fa-facebook me-2"></i>CLIHC Facebook
-			</a>
-			</li>
-			<li>
-			<a
-				href="https://web.facebook.com/laihc.org"
-				target="_blank"
-				rel="noopener"
-				class="footer-link"
-			>
-				<i class="fab fa-facebook me-2"></i>LAIHC Facebook
-			</a>
-			</li>
-			<!--
+			<div>
+				<p class="fw-semibold mb-2 h6">Follow us</p>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="https://web.facebook.com/laihc.org" target="_blank" rel="noopener" class="footer-link">
+							<i class="fab fa-facebook me-2"></i>LAIHC Facebook
+						</a>
+					</li>
+					<li>
+						<a href="https://web.facebook.com/clihc" target="_blank" rel="noopener" class="footer-link">
+							<i class="fab fa-facebook me-2"></i>CLIHC Facebook
+						</a>
+					</li>
+					<!--
 			<li>
 			<a
 				href="https://x.com/clihc2023"
