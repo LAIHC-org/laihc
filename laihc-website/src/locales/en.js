@@ -18,5 +18,5 @@ export default {
 	},
 	welcome: 'Welcome to <strong class="text-light">LAIHC</strong>',
 	about: 'Latin American Human-Computer Interaction Community',
-	cta: 'Discover <strong>CLIHC</strong>',
+	cta: 'Explore the 2026 edition of <strong>CLIHC</strong>',
 };
