@@ -6,10 +6,14 @@
 				<h1 class="display-4 fw-bold" v-html="$t('welcome')"></h1>
 				<p class="lead fw-bold text-light" v-html="$t('about')"></p>
 				<div class="d-flex justify-content-center">
-					<RouterLink class="btn btn-primary btn-shadow btn-lg me-2"
-						:to="{ name: `events-${locale}`, hash: '' }">
+					<a
+					href="https://clihc2026.laihc.org"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-primary btn-shadow btn-lg me-2"
+					>
 						<span v-html="t('cta')"></span>
-					</RouterLink>
+					</a>
 				</div>
 			</div>
 		</section>
