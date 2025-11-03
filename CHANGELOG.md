@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Unreleased]
 
-- Link to publications related to CLIHC conferences
+- Add content for CLIHC 2026 conference webpage
 
 ---
+
+## [2.0.4] - 2025-11-02
+
+### Changed
+
+- Change CTA button link for CLIHC 2026 to the new website URL
 
 ## [2.0.3] - 2025-06-28
 
