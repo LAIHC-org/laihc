@@ -1,60 +1,61 @@
-const n=`<section class="about container py-4" lang="en">
+const a=`<section class="about container py-4" lang="es">
   <div class="p-5 bg-light rounded shadow-sm pattern-gray-bg">
-    <h1 class="fw-bold mb-4">About <strong>LAIHC</strong></h1>
-
+    <h1 class="fw-bold mb-4">Acerca de <strong>LAIHC</strong></h1>
     <p>
-      The <strong>Latin American HCI Community (LAIHC)</strong> is an independent regional network of researchers, professionals, and
-      students dedicated to advancing Human-Computer Interaction (HCI) across Latin America. Its mission is to foster
-      collaboration, knowledge exchange, and regional development through research, education, and practice in HCI.
+      La <strong>Comunidad Latinoamericana de Interacción Humano-Computadora (LAIHC)</strong> es una red regional independiente de
+      investigadores, profesionales y estudiantes dedicada a promover el avance de la Interacción Humano-Computadora
+      (IHC)
+      en América Latina. Su misión es fomentar la colaboración, el intercambio de conocimiento y el desarrollo regional
+      mediante la investigación, la educación y la práctica en IHC.
     </p>
     <p>
-      LAIHC organizes the <strong><a class="link" href="/en/history">Latin American Conference on Human-Computer Interaction (CLIHC)</a></strong>, a biennial event that brings
-      together the HCI community to share emerging ideas, methods, and technologies. In addition, LAIHC supports the
-      growth of the community by promoting inclusive, accessible, and culturally relevant initiatives in digital
-      interaction design and evaluation.
+      LAIHC organiza el <strong><a class="link" href="/es/historia">Congreso Latinoamericano de Interacción Humano-Computadora (CLIHC)</a></strong>, un evento bienal que reúne a
+      la comunidad de IHC para compartir ideas, métodos y tecnologías emergentes. Además, impulsa iniciativas
+      inclusivas,
+      accesibles y culturalmente relevantes en el diseño y evaluación de la interacción digital.
     </p>
   </div>
 
-  <div class="accordion mt-4" id="laihcBoards-en">
+  <div class="accordion mt-4" id="laihcBoards-es">
     <div class="accordion-item">
-      <h2 class="accordion-header" id="heading-en-2023">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-en-2023"
+      <h2 class="accordion-header" id="heading-es-2023">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-es-2023"
           aria-expanded="true">
-          LAIHC Board 2023–2025
+          Comité de Coordinación 2023–2025
         </button>
       </h2>
-      <div id="collapse-en-2023" class="accordion-collapse collapse show" aria-labelledby="heading-en-2023">
+      <div id="collapse-es-2023" class="accordion-collapse collapse show" aria-labelledby="heading-es-2023">
         <div class="accordion-body">
           <dl class="row gy-4">
             <div class="col-12">
-              <dt class="fw-semibold">General Representative</dt>
-              <dd>Soraia Prietch<br><small class="text-muted">Federal University of Rondonópolis, Brazil & BUAP,
-                  Mexico</small></dd>
+              <dt class="fw-semibold">Representante General</dt>
+              <dd>Soraia Prietch<br><small class="text-muted">Universidad Federal de Rondonópolis, Brasil & BUAP,
+                  México</small></dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Research Representative</dt>
+              <dt class="fw-semibold">Representante de Investigación</dt>
               <dd>
-                Lizbeth Escobedo<br><small class="text-muted">Dalhousie University, Canada</small>
+                Lizbeth Escobedo<br><small class="text-muted">Universidad de Dalhousie, Canadá</small>
               </dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Industry Representatives</dt>
+              <dt class="fw-semibold">Representantes de la Industria</dt>
               <dd>
-                Víctor García Luna<br><small class="text-muted">Scrum México & Agile Quest, Mexico</small><br>
-                Pedro Reynolds-Cuellar<br><small class="text-muted">MIT & Robotics and AI Institute, USA</small>
+                Víctor García Luna<br><small class="text-muted">Scrum México & Agile Quest, México</small><br>
+                Pedro Reynolds-Cuellar<br><small class="text-muted">MIT & Robotics and AI Institute, EE.UU.</small>
               </dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Digital Communication Representative</dt>
+              <dt class="fw-semibold">Representante de Comunicación Digital</dt>
               <dd>
-                Miguel Ángel Rodríguez Ortiz<br><small class="text-muted">University of Colima, Mexico</small>
+                Miguel Ángel Rodríguez Ortiz<br><small class="text-muted">Universidad de Colima, México</small>
               </dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Advisory Council</dt>
+              <dt class="fw-semibold">Consejo Asesor</dt>
               <dd>
-                Laura Sanely Gaytán Lugo<br><small class="text-muted">University of Colima, Mexico</small><br>
-                Yazmín Magallanes<br><small class="text-muted">Edis Interactive, Mexico</small>
+                Laura Sanely Gaytán Lugo<br><small class="text-muted">Universidad de Colima, México</small><br>
+                Yazmín Magallanes<br><small class="text-muted">Edis Interactive, México</small>
               </dd>
             </div>
           </dl>
@@ -66,24 +67,24 @@ const n=`<section class="about container py-4" lang="en">
       <h2 class="accordion-header" id="heading-en-2019">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapse-en-2019" aria-expanded="false">
-          LAIHC Board 2019–2023
+          Comité de Coordinación 2019–2023
         </button>
       </h2>
       <div id="collapse-en-2019" class="accordion-collapse collapse">
         <div class="accordion-body">
           <dl class="row gy-4">
             <div class="col-12">
-              <dt class="fw-semibold">General Representative</dt>
+              <dt class="fw-semibold">Representante General</dt>
               <dd>Laura Sanely Gaytán-Lugo <br><small class="text-muted">Mexico</small></dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Research Representative</dt>
+              <dt class="fw-semibold">Representante de Investigación</dt>
               <dd>
                 Soraia Silva Prietch <br><small class="text-muted">Brazil</small>
               </dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Industry Representative</dt>
+              <dt class="fw-semibold">Representante de la Industria</dt>
               <dd>
                 Yazmín Magallanes  <br><small class="text-muted">Mexico</small>
               </dd>
@@ -97,26 +98,26 @@ const n=`<section class="about container py-4" lang="en">
       <h2 class="accordion-header" id="heading-en-2017">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapse-en-2017" aria-expanded="false">
-          LAIHC Board 2017–2019
+          Comité de Coordinación 2017–2019
         </button>
       </h2>
       <div id="collapse-en-2017" class="accordion-collapse collapse">
         <div class="accordion-body">
           <dl class="row gy-4">
             <div class="col-12">
-              <dt class="fw-semibold">General Representative</dt>
+              <dt class="fw-semibold">Representante General</dt>
               <dd>Pedro Santana-Mancilla <br><small class="text-muted">Mexico</small></dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Research Representative</dt>
+              <dt class="fw-semibold">Representante de Investigación</dt>
               <dd>
                 Laura Sanely Gaytán-Lugo <br><small class="text-muted">Mexico</small>
               </dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Industry Representative</dt>
+              <dt class="fw-semibold">Representante de la Industria</dt>
               <dd>
-                Jesus Santana Mancilla  <br><small class="text-muted">Mexico</small>
+                Jesús García Mancilla <br><small class="text-muted">Mexico</small>
               </dd>
             </div>
           </dl>
@@ -128,24 +129,24 @@ const n=`<section class="about container py-4" lang="en">
       <h2 class="accordion-header" id="heading-en-2012">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapse-en-2012" aria-expanded="false">
-          LAIHC Board 2012–2017
+          Comité de Coordinación 2012–2017
         </button>
       </h2>
       <div id="collapse-en-2012" class="accordion-collapse collapse">
         <div class="accordion-body">
           <dl class="row gy-4">
             <div class="col-12">
-              <dt class="fw-semibold">General Representative</dt>
+              <dt class="fw-semibold">Representante General</dt>
               <dd>J. Alfredo Sánchez <br><small class="text-muted">Mexico</small></dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Research Representative</dt>
+              <dt class="fw-semibold">Representante de Investigación</dt>
               <dd>
                 Elizabeth Sucupira Furtado <br><small class="text-muted">Brazil</small>
               </dd>
             </div>
             <div class="col-12">
-              <dt class="fw-semibold">Industry Representative</dt>
+              <dt class="fw-semibold">Representante de la Industria</dt>
               <dd>
                 Natalia Vivas   <br><small class="text-muted">Colombia</small>
               </dd>
@@ -156,4 +157,5 @@ const n=`<section class="about container py-4" lang="en">
     </div>
 
   </div>
-</section>`;export{n as default};
+</section>
+`;export{a as default};
